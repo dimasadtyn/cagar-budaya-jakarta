@@ -7,7 +7,7 @@
     "predev": "node scripts/copy-browser-assets.mjs",
     "prebuild": "node scripts/copy-browser-assets.mjs",
     "dev": "next dev",
-    "build": "next build && opennextjs-cloudflare",
+    "build": "next build && npx @opennextjs/cloudflare build",
     "postbuild": "node scripts/fix-prefetch-paths.mjs",
     "import": "tsx scripts/import-excel.ts",
     "models": "python scripts/ifc-to-glb.py",
