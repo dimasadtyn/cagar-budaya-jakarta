@@ -22,3 +22,7 @@ Thumbs.db
 # Disalin dari node_modules saat dev/build
 /public/maplibre-gl-worker.js
 /public/meshopt-decoder.js
+
+# Cloudflare
+/.wrangler/
+/.open-next/

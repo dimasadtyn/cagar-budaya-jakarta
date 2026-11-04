@@ -21,6 +21,8 @@ Buka http://localhost:3000. Untuk build produksi, buat `.env.local` berisi `NEXT
 | `npm run build`     | Build statis ke `out/`                                                          |
 | `npm run import`    | Excel di `data/source/` → `data/heritage-sites.json` + `data/import-report.csv` |
 | `npm run models`    | IFC di `data/source/models/` → `public/models/*/model.glb` (butuh Python)       |
+| `npm run preview`   | Build lalu jalankan secara lokal di runtime Cloudflare                          |
+| `npm run deploy`    | Build lalu terbitkan ke Cloudflare (butuh `npx wrangler login`)                 |
 | `npm test`          | Test skrip impor (parser koordinat, normalisasi nama dan slug)                  |
 | `npm run typecheck` | Pemeriksaan tipe TypeScript                                                     |
 | `npm run lint`      | ESLint                                                                          |
@@ -48,6 +50,7 @@ data/       data hasil impor dan isian manual (JSON)
 docs/       kebutuhan produk, skema data, keputusan teknis, panduan pengelolaan
 scripts/    skrip impor Excel, konversi model 3D, dan pascabuild
 server/     konfigurasi Apache/nginx: pengalihan URL lama, header keamanan, cache
+wrangler.jsonc  konfigurasi Cloudflare; pengalihan dan header-nya di public/_redirects, public/_headers
 src/app/    rute Next.js (ID tanpa awalan, EN di /en/)
 src/views/  isi halaman
 src/components/, src/lib/, src/styles/

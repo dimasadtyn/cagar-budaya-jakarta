@@ -78,7 +78,20 @@ Bila sebuah nama di sheet utama tidak ketemu pasangannya di sheet perwilayah, pa
 
 Warna per jenis elemen diatur di `WARNA` dan `MUSEUM` pada skrip yang sama.
 
-## Memasang di server
+## Memasang di Cloudflare
+
+Situs disajikan sebagai berkas statis lewat Cloudflare Workers Static Assets, sesuai `wrangler.jsonc`. Header keamanan dan pengalihan URL lama ada di `public/_headers` dan `public/_redirects`. `npm run preview` menjalankannya secara lokal di runtime Cloudflare.
+
+Lewat GitHub (terbit otomatis setiap push ke `main`):
+
+1. Dashboard Cloudflare → Workers & Pages → Create → Import a repository, lalu pilih repo ini.
+2. Build command: `npm run build`. Deploy command: `npx wrangler deploy`. Nama project harus sama dengan `name` di `wrangler.jsonc`.
+3. Di Settings → Build → Variables, isi `NEXT_PUBLIC_SITE_URL` dengan alamat website. Nilai ini masuk ke canonical, sitemap, dan gambar share saat build, jadi build ulang setiap kali alamatnya berubah.
+4. Domain sendiri dipasang di Settings → Domains & Routes.
+
+Lewat komputer sendiri: `npx wrangler login` sekali, buat `.env.local` berisi `NEXT_PUBLIC_SITE_URL`, lalu `npm run deploy`.
+
+## Memasang di server lain
 
 1. `npm run build` menghasilkan folder `out/`.
 2. Unggah seluruh isi `out/` ke folder website di server.

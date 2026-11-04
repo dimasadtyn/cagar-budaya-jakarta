@@ -81,7 +81,8 @@ cagar-budaya-jakarta/
 │  ├─ dki-boundary.py             unduh batas DKI dari OpenStreetMap
 │  ├─ copy-browser-assets.mjs     worker MapLibre dan decoder meshopt → public/ sebelum dev/build
 │  └─ fix-prefetch-paths.mjs       pascabuild: salin berkas prefetch ke nama yang diminta browser
-├─ server/                         pengalihan URL lama, header keamanan, cache (.htaccess, nginx.conf)
+├─ server/                         pengalihan URL lama, header keamanan, cache untuk Apache/nginx
+├─ wrangler.jsonc                  konfigurasi Cloudflare (padanan server/ ada di public/_headers, public/_redirects)
 ├─ public/                         photos/, models/ (model 3D, point cloud), logo
 └─ src/
    ├─ app/                         hanya rute; nama foldernya = URL, jadi tetap bahasa Indonesia
@@ -152,6 +153,8 @@ npm run build     # next build → out/, lalu scripts/fix-prefetch-paths.mjs
 Folder `out/` diunggah ke server Disbud. Pengalihan URL lama (PRD bagian 5) dipasang lewat `server/.htaccess` atau `server/nginx.conf`, tergantung jenis server (pertanyaan terbuka #1 di PRD). Header keamanan dan cache juga diatur di sana. Content-Security-Policy membatasi semua sumber ke situs sendiri, kecuali `tiles.openfreemap.org` untuk peta. `script-src` masih butuh `'unsafe-inline'` karena skrip bawaan ekspor statis Next tidak bisa diberi nonce, dan `'wasm-unsafe-eval'` untuk dekoder meshopt. `blob:` di `connect-src` dipakai tekstur model 3D. Bila menambah layanan luar, perbarui CSP di kedua berkas. HSTS belum dipasang karena bergantung pada pengaturan HTTPS server Disbud.
 
 Pembaruan data setelah tayang: Disbud mengirim Excel baru → `npm run import` → periksa `import-report.csv` dan diff `heritage-sites.json` → `npm run build` → unggah `out/`. Rinciannya di `docs/05-maintenance-guide.md`.
+
+Di Cloudflare, `out/` disajikan oleh Workers Static Assets (`wrangler.jsonc`), dengan header dan pengalihan di `public/_headers` dan `public/_redirects`. `@opennextjs/cloudflare` tidak dipakai: adapter itu untuk situs yang butuh server Next, sedangkan semua halaman di sini statis. Bila menambah layanan luar atau URL lama, perbarui `public/` dan `server/` bersamaan.
 
 ## Yang dipakai ulang dari `../hbim-jakarta-next`
 
