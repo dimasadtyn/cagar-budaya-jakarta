@@ -1,0 +1,58 @@
+.foto {
+  display: block;
+  animation: muncul 0.5s ease both;
+  width: 100%;
+  object-fit: cover;
+  background: var(--arsip);
+}
+
+.kosong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background: var(--arsip);
+}
+
+.logo {
+  width: 36%;
+  max-width: 7rem;
+  height: auto;
+  opacity: 0.55;
+  filter: grayscale(0.35);
+}
+
+.teks {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teks-foto-kosong);
+}
+
+.besar .logo {
+  width: 28%;
+  max-width: 11rem;
+}
+
+.besar .teks {
+  font-size: 0.8125rem;
+}
+
+.kecil {
+  padding: 0.375rem;
+}
+
+.kecil .logo {
+  width: 70%;
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+  }
+}

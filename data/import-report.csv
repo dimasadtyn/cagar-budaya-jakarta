@@ -1,0 +1,253 @@
+id,nama,sheet,masalah,nilai_asli
+,Ruko Jl. Pekojan No.72,CB Kawasan Kota Tua,tidak ditemukan di sheet utama (baris 77),"Jl. Pekojan No.72, Kel. Pekojan, Kec. Tambora, Jakarta Barat 11240"
+cb-0002,Masjid Al-Azhar,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-selatan; tidak dipakai,6° 5’ 57’’ LS--106° 47’ 57” BT
+cb-0004,Stasiun Kereta Api Manggarai,Update Data CB ~ 2026,koordinat jatuh di luar batas Provinsi DKI Jakarta; tidak dipakai,6°21.734’ LS--106°49.280’ BT
+cb-0005,Gedung SD Negeri Manggarai Utara,Update Data CB ~ 2026,koordinat jatuh di luar batas Provinsi DKI Jakarta; tidak dipakai,06° 21.735’’LS--106° 49.289’’BT
+cb-0006,Museum ABRI Satria Mandala,Update Data CB ~ 2026,koordinat tidak terbaca,06°23’108” LS--106°81’890” BT
+cb-0007,Gereja Effatha,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0008,Rumah Ibu Fatmawati,Update Data CB ~ 2026,"catatan nilai penting ditulis huruf besar; diubah otomatis, cek nama diri","BANGUNAN DIDIRIKAN TAHUN 1955 DENGAN GAYA ARSITEKTUR VILA, DIRANCANG KHUSUS UNTUK IBU FATMAWATI SEBAGAI IBU NEGARA REPUBLIK INDONESIA PERTAMA"
+cb-0008,Rumah Ibu Fatmawati,Update Data CB ~ 2026,koordinat: DMS dan UTM berselisih 1298 m; dipakai DMS,"S 6°14'02"" E 106°48'10"" 699492.12 E 9309309.18 S),"
+cb-0017,Menara Air Balai Yasa Manggarai,Update Data CB ~ 2026,koordinat tidak terbaca,"S 06°21'86.43"" E 106°85'16.87"""
+cb-0020,Masjid Assalafiyah,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0021,Kompleks Makam Pangeran Achmad Jakerta,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0022,Makam Pangeran Sang Hyang,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0027,Lubang Buaya,Update Data CB ~ 2026,koordinat tidak terbaca,06°17’131”LS--106°53’961”BT
+cb-0028,Gudang Amunisi Petukangan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0029,Lapangan Golf Rawamangun,Update Data CB ~ 2026,koordinat: DMS tidak terbaca; dipakai UTM,"06012 E 10605238/ 48M 699898.17 E 9322474.99 S,"
+cb-0029,Lapangan Golf Rawamangun,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0030,Kompleks Bangunan Vincentius Putri,Update Data CB ~ 2026,koordinat: DMS tidak terbaca; dipakai UTM,"(TITIK 1) S 6°1410.42"" E 106°524.45/48 M 706665.00 E 9310316.00 S"
+cb-0030,Kompleks Bangunan Vincentius Putri,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0031,Kompleks Perusahaan Umum Produksi Film Negara Bangunan 1,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0032,Kompleks Perusahaan Umum Produksi Film Negara Bangunan 2,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0033,Kompleks Perusahaan Umum Produksi Film Negara Bangunan 3,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0034,Jembatan Kereta Jalan Matraman Raya,Update Data CB ~ 2026,koordinat: beberapa titik dalam satu sel; dipakai titik pertama,(Titik A) S6°12’51.7”E106°51'14.5”; (Titik B) S6°12’47.1” E106°51'28.9”; (Titik C) S6°12’43.1” E106°51'39.0”; (Titik D) S6°12’40.6” E106°51'44.0”.
+cb-0035,Jembatan Kereta Terowongan Tiga,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0036,Stasiun Jatinegara,Update Data CB ~ 2026,koordinat: beberapa titik dalam satu sel; dipakai titik pertama,"(Titik A) S6°12’55”E-106°52'12.26” (48M 706922,48 E 9312633.11 N); (Titik B) S6°12’55.0”E-106°52'14.1” (48M 706971.07 E 9312633.49 N); (Titik C) S6°12’54.7”E-106°52'14.1” (48M 706971.11 E 9312642.67 N) (Titik D) S6°12’54.6”E-106°52'14.1” (48M 706923.29 E 9312643.39 N)"
+cb-0037,Golok Cakung No.I,Update Data CB ~ 2026,koordinat kosong,
+cb-0038,Golok Cakung No.II,Update Data CB ~ 2026,koordinat kosong,
+cb-0039,Golok Cakung No.III,Update Data CB ~ 2026,koordinat kosong,
+cb-0040,Golok Cakung No.IV,Update Data CB ~ 2026,koordinat kosong,
+cb-0041,Golok Cakung No.V,Update Data CB ~ 2026,koordinat kosong,
+cb-0042,Golok Cakung No.VI,Update Data CB ~ 2026,koordinat kosong,
+cb-0043,Golok Cakung No.VII,Update Data CB ~ 2026,koordinat kosong,
+cb-0055,Balai Seni/Wisma Seni/Galeri Nasional,Update Data CB ~ 2026,koordinat tidak terbaca,06°10’44” LS--06°49’58” BT
+cb-0056,Direktorat Jendral Perhubungan Laut,Update Data CB ~ 2026,nomor SK tidak lengkap (nomor/tahun tidak terbaca),Keputusan Gubernur DKI Jakarta No.475
+cb-0058,Gedung Balai Kota DKI Jakarta,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-pusat; tidak dipakai,06°21.794’ LS--106°49.640’ BT
+cb-0062,Departemen Pertahanan dan Keamanan,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-pusat; tidak dipakai,06o21.669’ LS--106o49.300’ BT
+cb-0064,Gedung Menteri Negara Kependudukan Dan Lingkungan Hidup,Update Data CB ~ 2026,koordinat kosong,
+cb-0068,Jembatan dan Patung Harmoni,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-pusat; tidak dipakai,"06°21.786’ LS--106°49,637’ BT"
+cb-0071,Gedung MPR/DPR,Update Data CB ~ 2026,koordinat tidak terbaca,6°17’63” LS--106°84’10” BT
+cb-0072,Prasasti dan Pintu Air Manggarai,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-pusat; tidak dipakai,06o21.722’ LS--106o49.280’ BT
+cb-0074,Museum Perumusan Naskah Proklamasi,Update Data CB ~ 2026,koordinat kosong,
+cb-0075,Gedung Kediaman Jenderal M.T. Haryono,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0082,Masjid Al-Makmur,Update Data CB ~ 2026,koordinat tidak terbaca,6°19’10” LS--106°84’27” BT
+cb-0083,Rumah Sakit PGI Cikini,Update Data CB ~ 2026,koordinat tidak terbaca,6°19’12” LS 106°84’18” BT
+cb-0086,Gedung Laboratorium Mikrobiologi Universitas Indonesia,Update Data CB ~ 2026,koordinat tidak terbaca,6°19’89” LS--106°84’21” BT
+cb-0090,Gedung Kantor Imigrasi,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0091,Gedung Pancasila / Departemen Luar Negeri,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-pusat; tidak dipakai,06°21.788’LS--106°49.626’BT
+cb-0092,Gedung BP7,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-pusat; tidak dipakai,06°21.789’LS--106°49.624’BT
+cb-0097,Eks. Gedung Jaya Gas,Update Data CB ~ 2026,koordinat tidak terbaca,6°17’63” LS--106°84’10” BT
+cb-0101,Rumah Sakit Umum Pusat Cipto Mangunkusumo,Update Data CB ~ 2026,koordinat kosong,
+cb-0102,Lembaga Biologi Molekuler Eijkman,Update Data CB ~ 2026,koordinat: beberapa titik dalam satu sel; dipakai titik pertama,"6°11'51""S--106°50'47""E/48 M 6,197511° S 106,846460°E"
+cb-0102,Lembaga Biologi Molekuler Eijkman,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0103,Museum Sumpah Pemuda,Update Data CB ~ 2026,koordinat tidak terbaca,06013.518’LS--106048.093’BT
+cb-0105,Gedung SMK I Budi Utomo,Update Data CB ~ 2026,koordinat jatuh di luar jakarta-pusat; tidak dipakai,06o21.733’ LS--106o49.278’ BT
+cb-0108,Gedung Ex Mahkamah Agung/Gedung Jusuf Anwar,Update Data CB ~ 2026,koordinat tidak terbaca,6°16’73” LS 106°83’80” BT
+cb-0109,Bangunan di Jalan Antara No.25,Update Data CB ~ 2026,pemilik tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0109,Bangunan di Jalan Antara No.25,Update Data CB ~ 2026,pengelola tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0110,Bangunan di Jalan Antara No.27,Update Data CB ~ 2026,pemilik tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0110,Bangunan di Jalan Antara No.27,Update Data CB ~ 2026,pengelola tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0114,Bangunan di Jalan Antara No.55,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0115,Gereja PNIEL,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0116,Kementerian Keuangan,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0121,Gereja Katedral,Update Data CB ~ 2026,koordinat tidak terbaca,6°16’92” LS--106°83’30” BT
+cb-0123,Gedung Kesenian Jakarta,Update Data CB ~ 2026,koordinat tidak terbaca,06°09’60” LS--106°50’03” BT
+cb-0125,Makam Souw Beng Kong,Update Data CB ~ 2026,koordinat kosong,
+cb-0125,Makam Souw Beng Kong,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0126,Pasar Petojo Enclek,Update Data CB ~ 2026,koordinat tidak terbaca,"6 . 10 '14 , 22"" LS 106 . 49 ' 01 , 94"" BT"
+cb-0126,Pasar Petojo Enclek,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0127,Gedung Bank Indonesia Kebon Sirih,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0128,Kantor Pusat PT Garuda Indonesia Kebon Sirih,Update Data CB ~ 2026,koordinat tidak terbaca,"""Titik (A) S 06°1057.6E 106°4932.4""""; Titik (B) S 06°1057.7"""" E 106°4932.9; Titik (C) S 06°1056.5"""" E 106°4933.4""""; Titik (D) S 06°1056.6"""" E 106°4932.5"""""""
+cb-0128,Kantor Pusat PT Garuda Indonesia Kebon Sirih,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0129,Gedung Eks Kedutaan Besar Inggris,Update Data CB ~ 2026,koordinat kosong,
+cb-0129,Gedung Eks Kedutaan Besar Inggris,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0131,Gedung Perintis Kemerdekaan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0132,Stadion Utama Gelora Bung Karno,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0133,Stadion Aquatik,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0134,Stadion Tennis Outdoor,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0135,Stadion Madya,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0136,Stadion Basket,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0137,Istora Senayan,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0138,Patung Panahan,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0139,Kompleks Gelanggang Olahraga Senayan,Update Data CB ~ 2026,koordinat tidak terbaca,6°21’89” LS--106°80’47” BT
+cb-0140,Toko Kompak,Update Data CB ~ 2026,koordinat: beberapa titik dalam satu sel; dipakai titik pertama,"(TITIK A) 06°0954.3S 106°50'04,0""E/48M 0702989 E 9318198 N"
+cb-0140,Toko Kompak,Update Data CB ~ 2026,koordinat: DMS tidak terbaca; dipakai UTM,"(TITIK A) 06°0954.3S 106°50'04,0""E/48M 0702989 E 9318198 N"
+cb-0141,Sin Tek Bio,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0142,Eks Toko Tio Tek Hong,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0143,Mobil REP-1,Update Data CB ~ 2026,koordinat kosong,
+cb-0143,Mobil REP-1,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0144,Ruas Jalan Pasar Baru,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0145,Kanal Ciliwung Jalan Antara dan Jalan Pasar Baru Selatan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0147,Tugu Proklamasi,Update Data CB ~ 2026,koordinat tidak terbaca,"6°1211.6""S 106°50'47.5""E."
+cb-0147,Tugu Proklamasi,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0148,Tugu Peringatan Proklamasi,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0149,Rumah Proklamasi,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0150,Prasasti Padrao Koleksi Museum Nasional Indonesia,Update Data CB ~ 2026,koordinat kosong,
+cb-0151,Kompleks Jalan Pasar Baru,Update Data CB ~ 2026,koordinat kosong,
+cb-0151,Kompleks Jalan Pasar Baru,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0152,Gedung Utama Badan Perencanaan Pembangunan Nasional,Update Data CB ~ 2026,koordinat tidak terbaca,"106°49,56”BT - 06°12’02”LS"
+cb-0153,Gedung Utama Detasemen A Pelopor Brigadir Mobil Kwitang,Update Data CB ~ 2026,koordinat kosong,
+cb-0154,Kompleks Halaman Gedung Proklamasi,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0154,Kompleks Halaman Gedung Proklamasi,Update Data CB ~ 2026,koordinat kosong,
+cb-0154,Kompleks Halaman Gedung Proklamasi,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0155,Gedung Eks Terminal Bandara Kemayoran,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0157,Bunderan Hotel Indonesia,Update Data CB ~ 2026,koordinat: beberapa titik dalam satu sel; dipakai titik pertama,"(TITIK A) S 06°11'40,4"" E 106°49'22,9"" (TITIK B) S 06°11'43.5"" E 106°49'22.9"" (TITIK C) S 06°11'42.0"" E 106°49'21.4"" (TITIK D) S 06°11'41.9"" E 106°49'24.6"" (TITIK E) S 6°11'39.1"" E 106°49'22.0"" (TITIK F) S 6°11'39.0"" E 106°49'23.8"" (TITIK G) S 6°11'39.5"" E 106°49'24.4"" (TITIK H) S 6°11'40.9"" E 106°49'25.2"" (TITIK I) S 6°11'42.5"" E 106°49'25.3"" (TITIK J) S 6°11'44.5"" E 106°49'23.9"" (TITIK K) S 6°11'44.8"" E 106°49'23.8"" (TITIK L) S 6°11'44.9"" E 106°49'22.4"" (TITIK M) S 6°11'44.6"" E 106°49'22.2"" (TITIK N) S 6°11'42.7"" E 106°49'20.6"" (TITIK O) S 6°11'41.1"" E 106°49'20.6"" (TITIK P) S 6°11'41.1"" E 106°49'20.6"""
+cb-0159,Rumah Piatu Muslimin,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0160,Rumah Sakit Persekutuan Gereja-Gereja di Indonesia Cikini,Update Data CB ~ 2026,koordinat tidak terbaca,6°19’12” LS 106°84’18” BT
+cb-0160,Rumah Sakit Persekutuan Gereja-Gereja di Indonesia Cikini,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0161,Kapel Rumah Sakit Perekutuan Gereja-Gereja di Indonesia Cikini,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0162,Gereja Anglikan Indonesia,Update Data CB ~ 2026,koordinat tidak terbaca,"S 06°11'0,78"" E 106°507,25"""
+cb-0162,Gereja Anglikan Indonesia,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0163,GPIB Paulus,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0164,Gereja Katolik Santa Theresia,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0167,Patung Chairil Anwar di Perguruan Taman Siswa Cabang Jakarta,Update Data CB ~ 2026,koordinat kosong,
+cb-0168,Gedung Sarinah,Update Data CB ~ 2026,koordinat kosong,
+cb-0168,Gedung Sarinah,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0169,Arca Brahma Candi Banon Nomor Inventaris 15,Update Data CB ~ 2026,koordinat kosong,
+cb-0169,Arca Brahma Candi Banon Nomor Inventaris 15,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0170,Arca Agastya Candi Banon Nomor Inventaris 63 B/4846,Update Data CB ~ 2026,koordinat kosong,
+cb-0170,Arca Agastya Candi Banon Nomor Inventaris 63 B/4846,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0171,Arca Siwa Mahadewa Candi Banon Koleksi Museum Nasional Indonesia Nomor Inventaris 23 A/4341,Update Data CB ~ 2026,koordinat kosong,
+cb-0171,Arca Siwa Mahadewa Candi Banon Koleksi Museum Nasional Indonesia Nomor Inventaris 23 A/4341,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0172,Prasasti Canggal Koleksi Museum Nasional Indonesia Nomor Inventaris D 4,Update Data CB ~ 2026,koordinat kosong,
+cb-0172,Prasasti Canggal Koleksi Museum Nasional Indonesia Nomor Inventaris D 4,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0173,Prasasti Kota Kapur Koleksi Museum Nasional Indonesia Nomor Inventaris D 90,Update Data CB ~ 2026,koordinat kosong,
+cb-0173,Prasasti Kota Kapur Koleksi Museum Nasional Indonesia Nomor Inventaris D 90,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0174,Arca Brahma Koleksi Museum Nasional Indonesia Nomor Inventaris 6033,Update Data CB ~ 2026,koordinat kosong,
+cb-0174,Arca Brahma Koleksi Museum Nasional Indonesia Nomor Inventaris 6033,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0190,Bangunan Lama Toko / Kantor / Gudang Sepanjang Jalan Kali Besar Timur Bangunan No.27,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0192,Gudang PT. Jasa Raharja,Update Data CB ~ 2026,koordinat: beberapa titik dalam satu sel; dipakai titik pertama,"S 06°08.005' E 106°48’40,8”"
+cb-0195,Bangunan Ruko Jl. Kali Besar Timur No.28,Update Data CB ~ 2026,koordinat kosong,
+cb-0195,Bangunan Ruko Jl. Kali Besar Timur No.28,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0197,Bangunan Lama Toko / Kantor / Gudang Sepanjang Jalan Kali Besar Barat Kantor No.5,Update Data CB ~ 2026,pemilik tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0203,Old City Club,Update Data CB ~ 2026,koordinat tidak terbaca,"06°08’60,5”S 106°48’40,2”E"
+cb-0211,Bangunan Lama Toko / Kantor / Gudang Sepanjang Jalan Kali Besar Barat Bangunan No.32,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0212,Bangunan Lama Toko / Kantor / Gudang Sepanjang Jalan Kali Besar Barat Bangunan No.33,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0213,Gedung Fed Ex Authorized Ship Center,Update Data CB ~ 2026,pemilik tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0213,Gedung Fed Ex Authorized Ship Center,Update Data CB ~ 2026,pengelola tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0215,Ruko di samping Gedung PT. Karya Technik Utama,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0217,Gedung QNB,Update Data CB ~ 2026,pengelola tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0218,Gedung Wira Pratama Kencana,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0224,Gedung Tjipta Niaga,Update Data CB ~ 2026,koordinat tidak terbaca,"S 0600805,2"" E 10604842,2"
+cb-0236,Masjid Jami Kebon Jeruk,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0237,Masjid Jami Tambora,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0238,Bangunan Langgam Cina Jl. Blandongan Rumah No.16,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’548’’ LS – 106°48’647” BT
+cb-0239,Bangunan Langgam Cina Jl. Blandongan Rumah No.17,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’541’’ LS – 106°48’629” BT
+cb-0240,Bangunan Langgam Cina Jl. Blandongan Rumah No.18,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’548’’ LS – 106°48’627” BT
+cb-0241,Bangunan Langgam Cina Jl. Blandongan Rumah No.19,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’553’’ LS – 106°48’630” BT
+cb-0242,Bangunan Langgam Cina Jl. Blandongan Rumah No.20,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’548’’ LS – 106°48’627” BT
+cb-0247,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.252,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’584’’ LS - 106°48’410” BT
+cb-0248,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.254,Update Data CB ~ 2026,koordinat kosong,
+cb-0250,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.258,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’560” LS - 106°48’407” BT
+cb-0251,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.259,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’55” LS – 106°48’406” BT
+cb-0252,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.260,Update Data CB ~ 2026,koordinat kosong,
+cb-0252,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.260,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0253,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.261,Update Data CB ~ 2026,koordinat tidak terbaca,106°08’547”S dan 106°48’397”E
+cb-0254,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.262,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’554”S dan 106°48’407”E
+cb-0255,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.263,Update Data CB ~ 2026,koordinat tidak terbaca,106°08’547”S dan 106°48’398”E
+cb-0256,Bangunan Langgam Cina Jl. KHM. Mansyur No.238 s/d 264 Rumah/Toko No.264,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’554”S dan 106°48’407”E
+cb-0257,Bangunan Cina,Update Data CB ~ 2026,koordinat kosong,
+cb-0257,Bangunan Cina,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0259,Bangunan Jl. Pekojan Rumah/Toko No.38,Update Data CB ~ 2026,koordinat kosong,
+cb-0259,Bangunan Jl. Pekojan Rumah/Toko No.38,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0260,Kantor PT Pralaba Rumah/Toko No.45,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’492” LS – 106°48’337” BT
+cb-0261,Bangunan Jl. Pekojan Rumah/Toko No.46,Update Data CB ~ 2026,koordinat kosong,
+cb-0261,Bangunan Jl. Pekojan Rumah/Toko No.46,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0262,Bangunan Jl. Pekojan Rumah/Toko No.47,Update Data CB ~ 2026,koordinat kosong,
+cb-0262,Bangunan Jl. Pekojan Rumah/Toko No.47,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0263,Bangunan Langgam Cina Jl. Pekojan Rumah/Toko No.54,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’494” LS – 106°48’309” BT
+cb-0264,Bangunan Langgam Cina Jl. Pekojan Rumah/Toko No.55,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’494” LS – 106°48’309” BT
+cb-0265,Bangunan Langgam Cina Jl. Pekojan Rumah/Toko No.60,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’493” LS – 106°48’301” BT
+cb-0266,Bangunan Langgam Cina Jl. Pekojan Rumah/Toko No.61,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’496 LS – 106°48’293” BT
+cb-0267,Bangunan Langgam Cina Jl. Pekojan Rumah/Toko No.67,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’493 LS – 106°48’280” BT
+cb-0268,Bangunan Langgam Cina Jl. Pekojan Rumah/Toko No.86,Update Data CB ~ 2026,status kepemilikan belum ada informasi,Tidak ada Informasi
+cb-0269,Bangunan Langgam Cina Jl. Pekojan Rumah/Toko No.87,Update Data CB ~ 2026,status kepemilikan belum ada informasi,Tidak ada Informasi
+cb-0270,Ruko Jl. Pekojan No.71,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0272,Masjid Jami Al Anshar,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’343” LS – 106°48’418” BT
+cb-0274,Makam Kramat Wijaya Kusuma,Update Data CB ~ 2026,koordinat tidak terbaca,06°08’727” LS – 106°46’549” BT
+cb-0275,Asrama Polsek Palmerah,Update Data CB ~ 2026,koordinat tidak terbaca,06°12’1433’’ LS – 106°47’379” BT
+cb-0276,Museum Tekstil,Update Data CB ~ 2026,koordinat tidak terbaca,06°11’293” LS – 106°48’580” BT
+cb-0278,Masjid Jami Al-Anwar,Update Data CB ~ 2026,pengelola tidak tampak seperti nama lembaga; tidak ditampilkan,
+cb-0279,Bangunan Langgam Cina di Kompleks SMPN 32,Update Data CB ~ 2026,koordinat kosong,
+cb-0280,Gedung Arsip Bank Pasific,Update Data CB ~ 2026,koordinat kosong,
+cb-0281,Lukisan Prambanan/Seko Karya S. Sudjojono,Update Data CB ~ 2026,koordinat kosong,
+cb-0281,Lukisan Prambanan/Seko Karya S. Sudjojono,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0282,Lukisan Bupati Cianjur Karya Raden Saleh Sjarif Boestaman,Update Data CB ~ 2026,koordinat kosong,
+cb-0282,Lukisan Bupati Cianjur Karya Raden Saleh Sjarif Boestaman,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0283,Lukisan Pengantin Revolusi karya Hendra Gunawan,Update Data CB ~ 2026,koordinat kosong,
+cb-0283,Lukisan Pengantin Revolusi karya Hendra Gunawan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0284,Lukisan Dewi karya Agus Djaya,Update Data CB ~ 2026,koordinat kosong,
+cb-0284,Lukisan Dewi karya Agus Djaya,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0285,Meriam Si Jagur,Update Data CB ~ 2026,koordinat kosong,
+cb-0285,Meriam Si Jagur,Update Data CB ~ 2026,status kepemilikan belum ada informasi,-
+cb-0286,Masjid Langgar Tinggi Pekojan,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0286,Masjid Langgar Tinggi Pekojan,Update Data CB ~ 2026,koordinat kosong,
+cb-0286,Masjid Langgar Tinggi Pekojan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0287,Gedung Singa Kuning No.3-4,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0287,Gedung Singa Kuning No.3-4,Update Data CB ~ 2026,koordinat kosong,
+cb-0287,Gedung Singa Kuning No.3-4,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0288,Hotel Omni Batavia,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0288,Hotel Omni Batavia,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0289,Bangunan Jl. Kalibesar Barat No.50,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0289,Bangunan Jl. Kalibesar Barat No.50,Update Data CB ~ 2026,koordinat kosong,
+cb-0289,Bangunan Jl. Kalibesar Barat No.50,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0290,Bangunan Jl. Kalibesar Timur No.24,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0290,Bangunan Jl. Kalibesar Timur No.24,Update Data CB ~ 2026,koordinat kosong,
+cb-0290,Bangunan Jl. Kalibesar Timur No.24,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0291,Bangunan Ruko No.28 A,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0291,Bangunan Ruko No.28 A,Update Data CB ~ 2026,koordinat kosong,
+cb-0291,Bangunan Ruko No.28 A,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0292,"Bangunan Ruko No.28 B,C, D, E",Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0292,"Bangunan Ruko No.28 B,C, D, E",Update Data CB ~ 2026,koordinat kosong,
+cb-0292,"Bangunan Ruko No.28 B,C, D, E",Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0293,Gudang Eks-Milkmaid Milk Company / Kantor Unit Pengelola Kawasan Kotatua,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0293,Gudang Eks-Milkmaid Milk Company / Kantor Unit Pengelola Kawasan Kotatua,Update Data CB ~ 2026,koordinat kosong,
+cb-0293,Gudang Eks-Milkmaid Milk Company / Kantor Unit Pengelola Kawasan Kotatua,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0294,Bangunan di sebelah Bangunan Tunas Dipta Persada,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0294,Bangunan di sebelah Bangunan Tunas Dipta Persada,Update Data CB ~ 2026,koordinat kosong,
+cb-0294,Bangunan di sebelah Bangunan Tunas Dipta Persada,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0295,Masjid Bandengan,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0295,Masjid Bandengan,Update Data CB ~ 2026,koordinat kosong,
+cb-0295,Masjid Bandengan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0296,Rumah No.10 Blandongan,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0296,Rumah No.10 Blandongan,Update Data CB ~ 2026,koordinat kosong,
+cb-0296,Rumah No.10 Blandongan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0297,Museum Bank Mandiri,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0298,Gedung PT Jasindo,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0298,Gedung PT Jasindo,Update Data CB ~ 2026,koordinat kosong,
+cb-0298,Gedung PT Jasindo,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0299,Rumah Tinggal Vogelaar,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0299,Rumah Tinggal Vogelaar,Update Data CB ~ 2026,koordinat kosong,
+cb-0299,Rumah Tinggal Vogelaar,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0300,Pusat Pelatihan dan Pengembangan Pendidikan Jakarta Barat,Update Data CB ~ 2026,koordinat: beberapa titik dalam satu sel; dipakai titik pertama,"Bangunan Utara: S 6°09'15,6"" E 106°48'42,5"" Bangunan Selatan: S 6°09'16,5"" E 106°48'42,7"""
+cb-0302,Café Batavia,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0305,Lukisan Tiga Putusan Pengadilan,Update Data CB ~ 2026,koordinat kosong,
+cb-0305,Lukisan Tiga Putusan Pengadilan,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0306,Lukisan Pertempuran Sultan Agung dn J.P. Coen Nomor Inventaris MSJ/ORB/LKS/0008,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0307,Pedang Keadilan Nomor Koleksi 284/MSJ,Update Data CB ~ 2026,koordinat kosong,
+cb-0307,Pedang Keadilan Nomor Koleksi 284/MSJ,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0308,Pedang Keadilan Nomor Koleksi 285/MSJ,Update Data CB ~ 2026,koordinat kosong,
+cb-0308,Pedang Keadilan Nomor Koleksi 285/MSJ,Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0309,Kawasan Kota Tua,Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0309,Kawasan Kota Tua,Update Data CB ~ 2026,tidak ditemukan di sheet Data CB Perwilayah; tanpa koordinat dan kepemilikan,
+cb-0318,Gereja Tugu,Update Data CB ~ 2026,koordinat tidak terbaca,06°21’789’’ LS – 106°49’626” BT
+cb-0320,Masjid Kampung Bandan,Update Data CB ~ 2026,koordinat tidak terbaca,06°07’907’’ LS – 106°49’228” BT
+cb-0325,Stasiun Kereta Api Tanjung Priok,Update Data CB ~ 2026,koordinat tidak terbaca,06°21’729’’ LS – 106°49’624” BT
+cb-0327,Gudang Timur,Update Data CB ~ 2026,koordinat: DMS dan UTM berselisih 899 m; dipakai DMS,"S 06°07'29,1"" E 106°48'21,3"" (48M 0700608 E 9322192 N)"
+cb-0329,"Gugusan Pulau Onrust, Pulau Cipir, Pulau Kelor, dan Pulau Bidadari",Update Data CB ~ 2026,catatan nilai penting kosong,
+cb-0329,"Gugusan Pulau Onrust, Pulau Cipir, Pulau Kelor, dan Pulau Bidadari",Update Data CB ~ 2026,koordinat kosong,
+cb-0329,"Gugusan Pulau Onrust, Pulau Cipir, Pulau Kelor, dan Pulau Bidadari",Update Data CB ~ 2026,status kepemilikan belum ada informasi,
+cb-0330,Mercusuar Pulau Sebira / Menara Jaga Utara Pulau Seribu,Update Data CB ~ 2026,status kepemilikan kosong; disimpulkan Pemerintah dari kolom Pemilik,Direktorat Perhubungan Laut Kementerian Perhubungan Republik Indonesia
+cb-0331,Benteng Onrust,Update Data CB ~ 2026,status kepemilikan kosong; disimpulkan Pemerintah dari kolom Pemilik,Pemerintah Provinsi DKI Jakarta
+cb-0332,Reruntuhan Menara Martello Pulau Bidadari,Update Data CB ~ 2026,status kepemilikan kosong; disimpulkan Pemerintah dari kolom Pemilik,Pemerintah Provinsi DKI Jakarta
+cb-0333,Reruntuhan Menara Martello Pulau Kelor,Update Data CB ~ 2026,status kepemilikan kosong; disimpulkan Pemerintah dari kolom Pemilik,Pemerintah Provinsi DKI Jakarta

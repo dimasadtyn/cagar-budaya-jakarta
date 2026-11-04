@@ -1,0 +1,74 @@
+.riwayat {
+  --chip-garis: var(--garis-tegas);
+  --chip-teks: var(--tinta);
+  --chip-sorot: var(--genteng);
+  --label: var(--teks-sekunder);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.riwayat[data-gelap] {
+  --chip-garis: color-mix(in srgb, var(--putih) 35%, transparent);
+  --chip-teks: var(--putih);
+  --chip-sorot: var(--sorot-di-gelap);
+  --label: var(--teks-terang-di-gelap);
+}
+
+.judul {
+  font-weight: 600;
+  color: var(--label);
+}
+
+.riwayat ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.riwayat li > * {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  max-width: 16rem;
+  padding: 0 0.75rem;
+  border: 1px solid var(--chip-garis);
+  border-radius: var(--radius-tombol);
+  background: transparent;
+  color: var(--chip-teks);
+  font: inherit;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.riwayat li > :hover {
+  border-color: var(--chip-sorot);
+  color: var(--chip-sorot);
+}
+
+.hapus {
+  min-height: 2rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--label);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.hapus:hover {
+  color: var(--chip-sorot);
+}

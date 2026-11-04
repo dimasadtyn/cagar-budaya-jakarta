@@ -1,0 +1,103 @@
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--garis);
+}
+
+.tab button {
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  background: none;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--teks-sekunder);
+}
+
+.tab button {
+  transition:
+    color 0.2s,
+    border-color 0.25s;
+}
+
+.tab button:hover {
+  color: var(--tinta);
+}
+
+.tab button[aria-selected="true"] {
+  border-bottom-color: var(--model-3d);
+  color: var(--tinta);
+}
+
+.panel {
+  padding-top: 1.25rem;
+  animation: muncul 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+}
+
+.penampil,
+.sampul {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-kartu);
+  background: var(--gelap);
+}
+
+.sampul {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: var(--teks-di-gelap);
+  background:
+    linear-gradient(
+      color-mix(in srgb, var(--tinta) 88%, transparent),
+      color-mix(in srgb, var(--tinta) 88%, transparent)
+    ),
+    repeating-linear-gradient(0deg, transparent 0 23px, color-mix(in srgb, var(--putih) 8%, transparent) 23px 24px),
+    repeating-linear-gradient(90deg, var(--gelap) 0 23px, color-mix(in srgb, var(--putih) 8%, transparent) 23px 24px);
+}
+
+.sampul p {
+  max-width: 26rem;
+  font-size: 0.9375rem;
+}
+
+.sampul button {
+  min-height: 2.75rem;
+  border-radius: var(--radius-tombol);
+  padding: 0 1.25rem;
+  border: 0;
+  background: var(--putih);
+  color: var(--tinta);
+  font-weight: 700;
+}
+
+.sampul button {
+  transition: background 0.2s;
+}
+
+.penampil {
+  height: auto;
+  background: var(--arsip);
+}
+
+.sampul button:disabled {
+  opacity: 0.6;
+}
+
+.sampul button:hover {
+  background: var(--arsip);
+}

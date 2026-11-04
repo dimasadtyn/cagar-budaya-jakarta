@@ -1,0 +1,46 @@
+# Salin ke akar folder website bersama isi out/. Butuh mod_alias; mod_headers dan mod_expires opsional.
+
+ErrorDocument 404 /404.html
+Options -Indexes
+DirectorySlash On
+AddType model/gltf-binary .glb
+
+# Pengalihan URL website HBIM lama (PRD bagian 5)
+RedirectMatch 301 ^/tentang-kami/?$ /tentang/
+RedirectMatch 301 ^/(hbim|point-clouds|plan-section)/?$ /model-3d/
+RedirectMatch 301 ^/keadaan-bangunan(-museum-[a-z-]+)?/?$ /model-3d/
+RedirectMatch 301 ^/situs-museum-sejarah/?$ /bangunan/museum-sejarah-jakarta/
+RedirectMatch 301 ^/situs-museum-tekstil/?$ /bangunan/museum-tekstil/
+RedirectMatch 301 ^/situs-museum-seni-rupa-dan-keramik/?$ /bangunan/museum-seni-rupa-dan-keramik/
+RedirectMatch 301 ^/situs-museum-wayang/?$ /bangunan/museum-wayang-no-27/
+RedirectMatch 301 ^/situs-museum-bahari/?$ /bangunan/museum-bahari/
+
+# Halaman berbahasa Inggris lama ke padanannya di /en/. URL /en/ lain yang tidak dikenal: 404.
+RedirectMatch 301 ^/en/about-us/?$ /en/about/
+RedirectMatch 301 ^/en/(hbim|point-clouds|plan-section|building-conservation-status)/?$ /en/3d-models/
+RedirectMatch 301 ^/en/site-jakarta-history-museum/?$ /en/building/museum-sejarah-jakarta/
+RedirectMatch 301 ^/en/site-textile-museum/?$ /en/building/museum-tekstil/
+RedirectMatch 301 ^/en/site-fine-art-and-ceramics-museum/?$ /en/building/museum-seni-rupa-dan-keramik/
+RedirectMatch 301 ^/en/site-wayang-museum/?$ /en/building/museum-wayang-no-27/
+RedirectMatch 301 ^/en/site-maritime-museum/?$ /en/building/museum-bahari/
+
+# Belum diputuskan Disbud (PRD pertanyaan terbuka #2), sementara 404:
+# /arsip-*, /literatur-sejarah, /sumber-referensi, /arsip-referensi, /glosarium
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+  # 'unsafe-inline' dibutuhkan skrip bawaan ekspor statis Next; 'wasm-unsafe-eval' untuk dekoder model 3D.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data: https://tiles.openfreemap.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+  <FilesMatch "\.(js|css|woff2|webp|png|jpg|svg|glb)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  <FilesMatch "\.(html|txt|xml)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>

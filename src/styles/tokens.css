@@ -1,0 +1,94 @@
+:root {
+  --tinta: #14213d;
+  --teks-sekunder: #4e5869;
+  --teks-prosa: #303a4e;
+  --teks-nonaktif: #9aa1ad;
+  --teks-foto-kosong: #8a7f6c;
+  --genteng: #c2410c;
+  --genteng-gelap: #9a3412;
+  --arsip: #ede6da;
+  --kertas: #f7f5f0;
+  --putih: #ffffff;
+  --garis: #ddd8ce;
+  --garis-tegas: #c9c2b5;
+  --garis-halus: #eee9e0;
+  --model-3d: #0f5f5a;
+  --kondisi-terawat: #2e6b43;
+  --kondisi-rusak-ringan: #b7791f;
+  --kondisi-rusak-sedang: #c2410c;
+  --kondisi-rusak-berat: #7f1d1d;
+
+  --gelap: var(--tinta);
+  --teks-di-gelap: #d7dce5;
+  --teks-terang-di-gelap: #e6e9ef;
+  --teks-redup-di-gelap: #aeb6c4;
+  --garis-di-gelap: #2c3a57;
+  --sorot-di-gelap: #fdba8c;
+
+  --kaki-latar: var(--gelap);
+  --kaki-judul: var(--putih);
+  --kaki-teks: var(--teks-di-gelap);
+  --kaki-redup: var(--teks-redup-di-gelap);
+  --kaki-garis: var(--garis-di-gelap);
+  --kaki-tautan: var(--putih);
+
+  --peta-darat: #f4f1ea;
+  --peta-air: #c9d7dc;
+  --peta-taman: #e1e6d3;
+  --peta-hutan: #dbe2cc;
+  --peta-pemukiman: #efebe2;
+  --peta-bangunan: #e6dfd1;
+
+  --font-teks: var(--font-plus-jakarta), system-ui, sans-serif;
+  --font-dulu: var(--font-instrument-serif), Georgia, serif;
+  --dulu-gaya: italic;
+  --dulu-tebal: 400;
+  --judul-tebal: 800;
+  --judul-huruf: none;
+
+  --radius-kartu: 0;
+  --radius-tombol: 0;
+  --radius-kecil: 0;
+  --menu-latar: transparent;
+  --menu-sisip: 0;
+  --menu-bayang: none;
+
+  --lebar-konten: 80rem;
+  --gutter: clamp(1rem, 4vw, 5rem);
+  --tinggi-header: 4.5rem;
+}
+
+:root[data-tema="disbud"] {
+  --tinta: #171717;
+  --teks-sekunder: #525252;
+  --teks-prosa: #262626;
+  --teks-nonaktif: #a3a3a3;
+  --genteng: #5f8d1a;
+  --genteng-gelap: #4a6e14;
+  --arsip: #eff1e8;
+  --kertas: #ffffff;
+  --garis: #e2e6d6;
+  --garis-tegas: #c8cfb5;
+  --garis-halus: #eef1e6;
+  --gelap: #171717;
+  --garis-di-gelap: #3a3a3a;
+  --sorot-di-gelap: #d9e2b8;
+  --kaki-latar: #d1dbaf;
+  --kaki-judul: #171717;
+  --kaki-teks: #262626;
+  --kaki-redup: #4b5535;
+  --kaki-garis: #b7c38f;
+  --kaki-tautan: #171717;
+  --font-teks: var(--font-inter), system-ui, sans-serif;
+  --font-dulu: var(--font-teks);
+  --dulu-gaya: normal;
+  --dulu-tebal: 400;
+  --judul-tebal: 600;
+  --judul-huruf: uppercase;
+  --radius-kartu: 1.5rem;
+  --radius-tombol: 999px;
+  --radius-kecil: 0.75rem;
+  --menu-latar: var(--putih);
+  --menu-sisip: 1.5rem;
+  --menu-bayang: 0 1px 2px color-mix(in srgb, var(--tinta) 8%, transparent), 0 0 0 1px var(--garis);
+}

@@ -1,0 +1,70 @@
+.footer {
+  background: var(--kaki-latar);
+  color: var(--kaki-teks);
+  padding-block: 4rem 2.5rem;
+  font-size: 0.875rem;
+}
+
+.isi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.identitas {
+  flex: 1 1 22.5rem;
+  min-width: 0;
+}
+
+.judul {
+  margin-bottom: 0.25rem;
+  font-weight: var(--judul-tebal);
+  font-size: 1.375rem;
+  letter-spacing: -0.02em;
+  color: var(--kaki-judul);
+}
+
+.moto {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  color: var(--kaki-redup);
+}
+
+.tautan {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  align-content: start;
+  column-gap: 3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+}
+
+.tautan a {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  color: var(--kaki-tautan);
+  background: linear-gradient(currentColor, currentColor) left 75% / 0 1px no-repeat;
+  transition: background-size 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.tautan a:hover {
+  background-size: 100% 1px;
+}
+
+.kecil {
+  flex-basis: 100%;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--kaki-garis);
+  color: var(--kaki-redup);
+}
+
+@media (max-width: 47.99rem) {
+  .tautan {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+  }
+}

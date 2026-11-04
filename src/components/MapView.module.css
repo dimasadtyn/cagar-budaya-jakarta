@@ -1,0 +1,64 @@
+.peta {
+  width: 100%;
+  min-height: 18rem;
+  background: var(--peta-darat);
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-kartu);
+  overflow: hidden;
+}
+
+.peta :global(.maplibregl-canvas) {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.peta[data-siap] :global(.maplibregl-canvas) {
+  opacity: 1;
+}
+
+.peta :global(.maplibregl-popup) {
+  animation: timbul 0.25s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes timbul {
+  from {
+    opacity: 0;
+    translate: 0 0.375rem;
+  }
+}
+
+.peta :global(.maplibregl-popup-content) {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--tinta) 18%, transparent);
+}
+
+.peta :global(.maplibregl-popup-close-button) {
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 1.125rem;
+}
+
+.peta :global(.maplibregl-ctrl-group) {
+  border-radius: 0;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.75rem 2rem 0.75rem 0.875rem;
+  font-family: var(--font-teks);
+  font-size: 0.8125rem;
+  color: var(--teks-sekunder);
+}
+
+.popup strong {
+  font-size: 0.9375rem;
+  line-height: 1.25;
+  color: var(--tinta);
+}
+
+.popup:hover strong {
+  color: var(--genteng);
+}

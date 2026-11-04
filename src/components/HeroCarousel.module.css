@@ -1,0 +1,272 @@
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(28rem, 50%) 1fr;
+  min-height: min(calc(100svh - var(--tinggi-header)), 52rem);
+  background: var(--gelap);
+  color: var(--putih);
+  overflow: hidden;
+}
+
+.foto {
+  position: absolute;
+  inset: 0;
+}
+
+.foto img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+
+.foto img.aktif {
+  opacity: 1;
+  animation: perlahan 9s ease-out both;
+}
+
+@keyframes perlahan {
+  from {
+    transform: scale(1.07);
+  }
+}
+
+.kabut {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 1;
+  width: 85%;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--gelap) 72%, transparent) 0%,
+    color-mix(in srgb, var(--gelap) 64%, transparent) 40%,
+    color-mix(in srgb, var(--gelap) 44%, transparent) 58%,
+    color-mix(in srgb, var(--gelap) 20%, transparent) 76%,
+    color-mix(in srgb, var(--gelap) 6%, transparent) 90%,
+    color-mix(in srgb, var(--gelap) 0%, transparent) 100%
+  );
+  -webkit-backdrop-filter: blur(8px) saturate(1.1);
+  backdrop-filter: blur(8px) saturate(1.1);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 45%,
+    rgb(0 0 0 / 0.75) 58%,
+    rgb(0 0 0 / 0.4) 70%,
+    rgb(0 0 0 / 0.12) 84%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 45%,
+    rgb(0 0 0 / 0.75) 58%,
+    rgb(0 0 0 / 0.4) 70%,
+    rgb(0 0 0 / 0.12) 84%,
+    transparent 100%
+  );
+}
+
+.panel {
+  position: relative;
+  z-index: 2;
+  grid-column: 1;
+  display: flex;
+}
+
+.isiPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+  padding: clamp(2.5rem, 6vh, 5rem) clamp(1.5rem, 4vw, 4.5rem) 6.5rem var(--gutter);
+}
+
+.keterangan {
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--putih) 35%, transparent);
+  animation: naik 0.8s 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.ganti {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.125rem;
+  animation: naik 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes naik {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+}
+
+.keterangan :global(.dulu) {
+  font-size: 1.375rem;
+  color: var(--teks-terang-di-gelap);
+}
+
+.nama {
+  font-weight: 800;
+  font-size: 1.375rem;
+  letter-spacing: -0.02em;
+}
+
+.nama span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.nama:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.nama:hover span {
+  transform: translateX(0.25rem);
+}
+
+.kecil {
+  margin-top: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--teks-di-gelap);
+}
+
+.kontrol {
+  position: absolute;
+  z-index: 3;
+  left: var(--gutter);
+  bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.kontrol > button {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--putih) 50%, transparent);
+  background: color-mix(in srgb, var(--gelap) 35%, transparent);
+  color: var(--putih);
+}
+
+.kontrol > button {
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.kontrol > button:hover {
+  background: var(--putih);
+  color: var(--tinta);
+}
+
+.titik {
+  display: flex;
+  margin: 0 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.titik button {
+  width: 2rem;
+  height: 2.75rem;
+  border: 0;
+  background: none;
+  position: relative;
+}
+
+.titik button::after {
+  content: "";
+  position: absolute;
+  left: 0.375rem;
+  right: 0.375rem;
+  top: 50%;
+  height: 3px;
+  background: color-mix(in srgb, var(--putih) 45%, transparent);
+}
+
+.titik button[aria-current="true"]::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0.375rem;
+  right: 0.375rem;
+  top: 50%;
+  height: 3px;
+  background: var(--putih);
+  transform-origin: left;
+  animation: maju var(--jeda) linear both;
+  animation-play-state: paused;
+}
+
+.hero[data-jalan="true"] .titik button[aria-current="true"]::before {
+  animation-play-state: running;
+}
+
+.hero:not([data-jalan="true"]) .titik button[aria-current="true"]::before {
+  animation: none;
+}
+
+@keyframes maju {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 63.99rem) {
+  .hero {
+    --tinggi-foto: min(75vw, 36rem);
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .foto {
+    bottom: auto;
+    height: calc(var(--tinggi-foto) + 10rem);
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
+  }
+
+  .kabut {
+    inset: 0;
+    width: auto;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--gelap) 0%, transparent) 0,
+      color-mix(in srgb, var(--gelap) 35%, transparent) calc(var(--tinggi-foto) * 0.75),
+      color-mix(in srgb, var(--gelap) 72%, transparent) calc(var(--tinggi-foto) + 6rem),
+      color-mix(in srgb, var(--gelap) 80%, transparent) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      180deg,
+      transparent 0,
+      transparent calc(var(--tinggi-foto) * 0.55),
+      #000 calc(var(--tinggi-foto) + 4rem)
+    );
+    mask-image: linear-gradient(
+      180deg,
+      transparent 0,
+      transparent calc(var(--tinggi-foto) * 0.55),
+      #000 calc(var(--tinggi-foto) + 4rem)
+    );
+  }
+
+  .isiPanel {
+    padding: calc(var(--tinggi-foto) + 1rem) var(--gutter) 5.5rem;
+    gap: 2rem;
+  }
+
+  .kontrol {
+    bottom: 1.25rem;
+  }
+}

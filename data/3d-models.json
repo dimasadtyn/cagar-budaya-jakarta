@@ -1,0 +1,45 @@
+{
+  "museum sejarah jakarta": {
+    "model": "/models/sejarah-jakarta/model.glb",
+    "point_cloud": []
+  },
+  "museum tekstil": {
+    "model": "/models/tekstil/model.glb",
+    "point_cloud": []
+  },
+  "museum seni rupa dan keramik": {
+    "model": "/models/seni-rupa-dan-keramik/model.glb",
+    "point_cloud": [
+      "/models/seni-rupa-dan-keramik/point-cloud-1.webp",
+      "/models/seni-rupa-dan-keramik/point-cloud-2.webp",
+      "/models/seni-rupa-dan-keramik/point-cloud-3.webp",
+      "/models/seni-rupa-dan-keramik/point-cloud-4.webp",
+      "/models/seni-rupa-dan-keramik/point-cloud-5.webp",
+      "/models/seni-rupa-dan-keramik/point-cloud-6.webp",
+      "/models/seni-rupa-dan-keramik/point-cloud-7.webp",
+      "/models/seni-rupa-dan-keramik/point-cloud-8.webp"
+    ]
+  },
+  "museum wayang": {
+    "model": "/models/wayang/model.glb",
+    "point_cloud": [
+      "/models/wayang/point-cloud-1.webp",
+      "/models/wayang/point-cloud-2.webp",
+      "/models/wayang/point-cloud-3.webp",
+      "/models/wayang/point-cloud-4.webp",
+      "/models/wayang/point-cloud-5.webp"
+    ]
+  },
+  "museum bahari": {
+    "model": "/models/bahari/model.glb",
+    "point_cloud": [
+      "/models/bahari/point-cloud-1.webp",
+      "/models/bahari/point-cloud-2.webp",
+      "/models/bahari/point-cloud-3.webp",
+      "/models/bahari/point-cloud-4.webp",
+      "/models/bahari/point-cloud-5.webp",
+      "/models/bahari/point-cloud-6.webp",
+      "/models/bahari/point-cloud-7.webp"
+    ]
+  }
+}

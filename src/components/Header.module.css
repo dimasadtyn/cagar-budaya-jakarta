@@ -1,0 +1,232 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--kertas);
+  border-bottom: 1px solid var(--garis);
+}
+
+@supports (animation-timeline: scroll()) {
+  .header {
+    animation: bayang linear both;
+    animation-timeline: scroll();
+    animation-range: 0 6rem;
+  }
+}
+
+@keyframes bayang {
+  to {
+    background: color-mix(in srgb, var(--kertas) 92%, transparent);
+    box-shadow: 0 6px 24px -12px color-mix(in srgb, var(--tinta) 25%, transparent);
+    backdrop-filter: blur(8px);
+  }
+}
+
+.isi {
+  height: var(--tinggi-header);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.merek {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-weight: 800;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.merek img {
+  height: 2.5rem;
+  width: auto;
+}
+
+.merek span {
+  padding-left: 0.875rem;
+  border-left: 1px solid var(--garis-tegas);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0 var(--menu-sisip);
+  border-radius: var(--radius-tombol);
+  background: var(--menu-latar);
+  box-shadow: var(--menu-bayang);
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.menu a,
+.menuPonsel a {
+  position: relative;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  transition: color 0.2s;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.menu a:hover::after,
+.menu a[aria-current="page"]::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu a:hover,
+.menuPonsel a:hover,
+.menu a[aria-current="page"],
+.menuPonsel a[aria-current="page"] {
+  color: var(--genteng);
+}
+
+.bahasa {
+  display: flex;
+  gap: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.bahasa a,
+.bahasa span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.bahasa span[aria-current] {
+  position: relative;
+  color: var(--genteng);
+}
+
+.bahasa span[aria-current]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  height: 2px;
+  background: currentColor;
+}
+
+.bahasa a {
+  color: var(--teks-sekunder);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.bahasa a:hover {
+  color: var(--genteng);
+}
+
+.ponsel {
+  display: none;
+}
+
+@media (max-width: 63.99rem) {
+  .merek {
+    gap: 0.625rem;
+    font-size: 0.9375rem;
+  }
+
+  .merek img {
+    height: 2rem;
+  }
+
+  .merek span {
+    padding-left: 0.625rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .ponsel {
+    display: block;
+  }
+
+  .ponsel summary {
+    list-style: none;
+    border-radius: var(--radius-tombol);
+    width: 2.75rem;
+    height: 2.75rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--tinta);
+    cursor: pointer;
+    transition:
+      background 0.2s,
+      color 0.2s;
+  }
+
+  .ponsel[open] summary {
+    background: var(--tinta);
+    color: var(--putih);
+  }
+
+  .ponsel summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .menuPonsel {
+    position: absolute;
+    inset: var(--tinggi-header) 0 auto;
+    margin: 0;
+    padding: 0.5rem var(--gutter) 1rem;
+    list-style: none;
+    background: var(--kertas);
+    border-bottom: 1px solid var(--garis);
+    box-shadow: 0 16px 24px -16px color-mix(in srgb, var(--tinta) 30%, transparent);
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+
+  .ponsel[open] .menuPonsel {
+    animation: turun 0.25s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .menuPonsel li + li {
+    border-top: 1px solid var(--garis);
+  }
+
+  .menuPonsel a {
+    width: 100%;
+    min-height: 3.25rem;
+  }
+}
+
+@keyframes turun {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+}

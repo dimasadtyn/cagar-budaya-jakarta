@@ -1,0 +1,6 @@
+public
+node_modules
+.next
+out
+package-lock.json
+data/heritage-sites.json

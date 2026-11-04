@@ -1,0 +1,46 @@
+{
+  "slide": [
+    {
+      "slug": "museum-sejarah-jakarta",
+      "foto": "/photos/home/museum-sejarah-jakarta.webp",
+      "alt": "Gedung Museum Sejarah Jakarta dan Taman Fatahillah",
+      "kredit": null,
+      "lisensi": null
+    },
+    {
+      "slug": "museum-tekstil",
+      "foto": "/photos/home/museum-tekstil.webp",
+      "alt": "Serambi depan Museum Tekstil",
+      "kredit": null,
+      "lisensi": null
+    },
+    {
+      "slug": "museum-seni-rupa-dan-keramik",
+      "foto": "/photos/home/museum-seni-rupa-dan-keramik.webp",
+      "alt": "Fasad berpilar Museum Seni Rupa dan Keramik",
+      "kredit": null,
+      "lisensi": null
+    },
+    {
+      "slug": "museum-wayang-no-27",
+      "foto": "/photos/home/museum-wayang.webp",
+      "alt": "Fasad Museum Wayang",
+      "kredit": null,
+      "lisensi": null
+    },
+    {
+      "slug": "museum-bahari",
+      "foto": "/photos/home/museum-bahari.webp",
+      "alt": "Gerbang Museum Bahari dengan dua jangkar",
+      "kredit": null,
+      "lisensi": null
+    }
+  ],
+  "pernah_bernama_lain": [
+    "museum-sejarah-jakarta",
+    "museum-seni-rupa-dan-keramik",
+    "istana-merdeka",
+    "gereja-immanuel",
+    "perpustakaan-nasional"
+  ]
+}

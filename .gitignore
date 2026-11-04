@@ -1,0 +1,24 @@
+# Data mentah Disbud: memuat data pribadi narahubung
+data/source/*
+!data/source/README.md
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Dependensi
+/node_modules/
+
+# Lingkungan
+.env*.local
+
+# Sistem
+.DS_Store
+Thumbs.db
+~$*
+
+# Disalin dari node_modules saat dev/build
+/public/maplibre-gl-worker.js
+/public/meshopt-decoder.js

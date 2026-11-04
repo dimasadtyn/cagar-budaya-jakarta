@@ -1,0 +1,43 @@
+.aksi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aksi button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  border: 1px solid var(--tinta);
+  border-radius: var(--radius-tombol);
+  background: transparent;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.aksi button:hover {
+  background: var(--tinta);
+  color: var(--putih);
+}
+
+.pesan:not(:empty) {
+  animation: muncul 0.3s ease;
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+  }
+}
+
+.pesan {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--teks-sekunder);
+}

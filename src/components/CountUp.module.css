@@ -1,0 +1,18 @@
+.hitung {
+  display: inline-grid;
+  justify-items: end;
+}
+
+.hitung::before {
+  content: attr(data-akhir);
+  visibility: hidden;
+}
+
+.hitung::before,
+.hitung > span {
+  grid-area: 1 / 1;
+}
+
+:global(.gerak) .hitung:not([data-mulai]) > span {
+  opacity: 0;
+}

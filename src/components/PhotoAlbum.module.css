@@ -1,0 +1,186 @@
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.galeri button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background: var(--tinta);
+  cursor: zoom-in;
+}
+
+.galeri img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.galeri button:hover img {
+  transform: scale(1.05);
+}
+
+.dialog {
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 3.5rem 4rem 1rem;
+  border: 0;
+  background: transparent;
+  color: var(--teks-terang-di-gelap);
+}
+
+.dialog::backdrop {
+  background: color-mix(in srgb, var(--gelap) 94%, transparent);
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dialog figure {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  margin: 0;
+  pointer-events: none;
+}
+
+.dialog figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dialog figcaption {
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--teks-redup-di-gelap);
+}
+
+.deret {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.25rem;
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.deret button {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background: var(--tinta);
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+
+.deret button:hover {
+  opacity: 0.8;
+}
+
+.deret button[aria-current="true"] {
+  opacity: 1;
+  outline: 2px solid var(--putih);
+  outline-offset: 1px;
+}
+
+.deret img {
+  display: block;
+  width: 4.5rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.tutup,
+.sebelumnya,
+.berikutnya {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--putih) 12%, transparent);
+  color: var(--putih);
+}
+
+.tutup {
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.sebelumnya,
+.berikutnya {
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.sebelumnya {
+  left: 0.75rem;
+}
+
+.berikutnya {
+  right: 0.75rem;
+}
+
+.tutup,
+.sebelumnya,
+.berikutnya {
+  transition: background 0.2s;
+}
+
+.tutup:hover,
+.sebelumnya:hover,
+.berikutnya:hover {
+  background: color-mix(in srgb, var(--putih) 24%, transparent);
+}
+
+@media (max-width: 40rem) {
+  .dialog {
+    padding: 3.5rem 0.5rem 1rem;
+  }
+
+  .sebelumnya,
+  .berikutnya {
+    width: 2.25rem;
+    height: 2.25rem;
+    background: color-mix(in srgb, var(--gelap) 55%, transparent);
+  }
+
+  .sebelumnya {
+    left: 0.25rem;
+  }
+
+  .berikutnya {
+    right: 0.25rem;
+  }
+
+  .deret img {
+    width: 3.5rem;
+  }
+}

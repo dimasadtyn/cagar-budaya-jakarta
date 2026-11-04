@@ -1,0 +1,41 @@
+.lembar {
+  margin: 0;
+  border-bottom: 1px solid var(--garis-halus);
+}
+
+.lembar div {
+  display: grid;
+  grid-template-columns: 8.75rem minmax(0, 1fr);
+  border-top: 1px solid var(--garis-halus);
+  font-size: 0.9375rem;
+}
+
+.lembar dt,
+.lembar dd {
+  padding-block: 0.6875rem;
+}
+
+.lembar dt {
+  color: var(--teks-sekunder);
+}
+
+.lembar dd {
+  margin: 0;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.lembar a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lembar a:hover {
+  color: var(--genteng);
+}
+
+@media (max-width: 47.99rem) {
+  .lembar div {
+    grid-template-columns: 7rem minmax(0, 1fr);
+  }
+}
