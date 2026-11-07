@@ -122,25 +122,27 @@
 }
 
 .dialog[open] {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto auto auto;
+  grid-template-areas:
+    "gambar"
+    "alat"
+    "keterangan"
+    "deret";
+  justify-items: center;
+  gap: 0.75rem;
 }
 
 .dialog figure {
-  flex: 1;
-  min-height: 0;
-  width: 100%;
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
-  gap: 0.75rem;
-  margin: 0;
-  pointer-events: none;
+  display: contents;
 }
 
 .panggung {
+  grid-area: gambar;
   position: relative;
+  align-self: stretch;
+  justify-self: stretch;
   min-height: 0;
   overflow: hidden;
   pointer-events: auto;
@@ -171,10 +173,7 @@
 }
 
 .alat {
-  position: fixed;
-  top: 0.75rem;
-  left: 50%;
-  translate: -50% 0;
+  grid-area: alat;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -212,12 +211,15 @@
 }
 
 .dialog figcaption {
+  grid-area: keterangan;
   font-size: 0.875rem;
   text-align: center;
   color: var(--teks-redup-di-gelap);
 }
 
 .deret {
+  grid-area: deret;
+  justify-self: center;
   display: flex;
   gap: 0.5rem;
   max-width: 100%;
