@@ -6,7 +6,6 @@ import ShareButtons from "@/components/ShareButtons";
 import Photo from "@/components/Photo";
 import { ogDasar } from "@/components/SiteShell";
 import JsonLd, { remahLd } from "@/components/JsonLd";
-import Card from "@/components/Card";
 import ConditionReport, { warnaTingkat } from "@/components/ConditionReport";
 import DataSheet from "@/components/DataSheet";
 import Model3D from "@/components/Model3D";
@@ -16,7 +15,7 @@ import { anggotaKawasan, cariCagarBudaya, daftarCagarBudaya, terdekat } from "@/
 import { formatJarak, formatKoordinat } from "@/lib/geo";
 import { alternatif, JENIS_EN, LABEL, RUTE, skPendek, tautan, type Bahasa } from "@/lib/labels";
 import { ringkas } from "@/lib/summary";
-import { PENERBIT, URL_SITUS } from "@/lib/site";
+import { EMAIL_KOREKSI, PENERBIT, URL_SITUS } from "@/lib/site";
 import { JENIS, type CagarBudaya, type Jenis } from "@/lib/schema";
 import { TEKS } from "@/lib/messages";
 import css from "./detail.module.css";
@@ -112,6 +111,8 @@ function History({ teks }: { teks: string }) {
   );
 }
 
+const PANJANG_RINGKASAN = 320;
+
 const keTitik = (x: CagarBudaya, b: Bahasa, keterangan: string, utama = false): Titik[] =>
   x.koordinat ? [{ id: x.id, ...x.koordinat, nama: x.nama, href: tautan(x, b), keterangan, utama }] : [];
 
@@ -161,16 +162,25 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
     : [];
   const titikAnggota = anggota.flatMap((a) => keTitik(a, b, `${l.jenis[a.jenis]} · ${a.alamat}`));
   const foto = cb.foto[0];
+  const ringkasan =
+    !cb.deskripsi &&
+    cb.nilai_penting &&
+    cb.nilai_penting.length <= PANJANG_RINGKASAN &&
+    !cb.nilai_penting.includes("\n")
+      ? cb.nilai_penting
+      : null;
+  const petaDiSampul = !foto && !!titikUtama;
   const adaKondisi = !!cb.kondisi || anggota.some((a) => a.kondisi?.umum);
   const tujuan = cb.koordinat
     ? `${cb.koordinat.lat},${cb.koordinat.lng}`
     : encodeURIComponent(`${cb.nama}, ${cb.alamat}`);
   const jelajah = RUTE.jelajah[b];
+  const urlMaps = `https://www.google.com/maps/search/?api=1&query=${tujuan}`;
+  const mailKoreksi = `mailto:${EMAIL_KOREKSI}?subject=${encodeURIComponent(t.koreksiSubjek(cb.nama, cb.id))}&body=${encodeURIComponent(`${URL_SITUS}${tautan(cb, b)}\n\n`)}`;
 
   const isi = [
-    cb.foto.length > 1 && { id: "galeri", label: t.galeri },
     cb.deskripsi && { id: "deskripsi", label: t.deskripsi },
-    cb.nilai_penting && { id: "sejarah", label: t.sejarah },
+    cb.nilai_penting && !ringkasan && { id: "sejarah", label: t.sejarah },
     cb.model_3d && { id: "model-3d", label: TEKS[b].model3d },
     adaKondisi && { id: "kondisi", label: t.kondisi },
     anggota.length > 0 && { id: "anggota", label: t.anggota },
@@ -185,28 +195,36 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
       <JsonLd
         data={remahLd([
           { nama: TEKS[b].beranda, href: RUTE.beranda[b] },
+          { nama: TEKS[b].menu.jelajah, href: jelajah },
           { nama: l.jenis[cb.jenis], href: `${jelajah}?jenis=${cb.jenis}` },
           { nama: cb.nama, href: tautan(cb, b) },
         ])}
       />
       <header className={`wadah ${css.kepala}`}>
         <nav aria-label={TEKS[b].remah} className={css.remah}>
-          <Link href={RUTE.beranda[b]}>{TEKS[b].beranda}</Link> /{" "}
-          <Link href={`${jelajah}?jenis=${cb.jenis}`}>{l.jenis[cb.jenis]}</Link> /{" "}
-          <Link href={`${jelajah}?wilayah=${cb.wilayah[0]}`}>{l.wilayah[cb.wilayah[0]]}</Link>
+          <Link href={RUTE.beranda[b]}>{TEKS[b].beranda}</Link> / <Link href={jelajah}>{TEKS[b].menu.jelajah}</Link> /{" "}
+          <Link href={`${jelajah}?jenis=${cb.jenis}`}>{l.jenis[cb.jenis]}</Link>
         </nav>
         <p className={css.lencana}>
-          <span className={css.lencanaSk}>{skPendek(cb)}</span>
-          <span>{l.jenis[cb.jenis]}</span>
+          <span className={css.lencanaSk} title={cb.nomor_sk}>
+            {skPendek(cb)}
+          </span>
+          <Link href={`${jelajah}?jenis=${cb.jenis}`}>{l.jenis[cb.jenis]}</Link>
           {cb.wilayah.map((w) => (
-            <span key={w}>{l.wilayah[w]}</span>
+            <Link key={w} href={`${jelajah}?wilayah=${w}`}>
+              {l.wilayah[w]}
+            </Link>
           ))}
           {cb.kondisi?.umum && (
             <span className={css.lencanaKondisi} style={warnaTingkat(cb.kondisi.umum)}>
               {t.kondisiLencana(t.tingkat[cb.kondisi.umum])}
             </span>
           )}
-          {cb.model_3d && <span className={css.lencana3d}>{TEKS[b].model3d}</span>}
+          {cb.model_3d && (
+            <a href="#model-3d" className={css.lencana3d}>
+              {TEKS[b].model3d}
+            </a>
+          )}
         </p>
         {cb.kelompok && (
           <p className={css.kelompok} lang={asli}>
@@ -229,32 +247,47 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
             {t.dikenal} <span lang={asli}>{cb.nama_lain.join(", ")}</span>
           </p>
         )}
+        {ringkasan && (
+          <p className={css.ringkasan} lang={asli}>
+            {ringkasan}
+          </p>
+        )}
+        {ringkasan && t.hanyaId && <p className={css.catatanBahasa}>{t.hanyaId}</p>}
         <div className={css.aksi}>
           {cb.lembar_pdf && (
             <a href={cb.lembar_pdf.berkas} download className={css.tombolUtama}>
               {t.unduhPdf(cb.lembar_pdf.ukuran_kb)}
             </a>
           )}
-          <a href="#lokasi" className={cb.lembar_pdf ? css.tombolKedua : css.tombolUtama}>
-            {t.lihatLokasi}
+          <a
+            href={urlMaps}
+            target="_blank"
+            rel="noopener"
+            className={cb.lembar_pdf ? css.tombolKedua : css.tombolUtama}
+          >
+            {t.bukaGoogle}
           </a>
+          {!petaDiSampul && (
+            <a href="#lokasi" className={css.tombolKedua}>
+              {t.lihatLokasi}
+            </a>
+          )}
           <ShareButtons judul={cb.nama} b={b} />
         </div>
       </header>
 
-      <div className={`wadah ${css.sampul} ${foto ? "" : css.tanpaFoto}`}>
-        {foto && (
+      <div className={`wadah ${css.sampul} ${foto || petaDiSampul ? "" : css.tanpaFoto}`}>
+        {foto ? (
           <figure className={css.figur}>
-            <Photo
-              src={foto.berkas}
-              srcSet={foto.kecil && `${foto.kecil} 640w, ${foto.berkas} 1600w`}
-              sizes="(min-width: 64rem) 60vw, 100vw"
-              prioritas
-              alt={foto.keterangan ? `${cb.nama}: ${foto.keterangan}` : cb.nama}
-              nama={cb.nama}
-              rasio="3/2"
-              ukuran="besar"
+            <PhotoAlbum
               b={b}
+              sampul={{ sizes: "(min-width: 64rem) 60vw, 100vw" }}
+              foto={cb.foto.map((f, i) => ({
+                src: f.berkas,
+                kecil: f.kecil,
+                alt: f.keterangan ? `${cb.nama}: ${f.keterangan}` : i ? `${cb.nama}, ${t.fotoKe(i + 1)}` : cb.nama,
+                kredit: `${TEKS[b].foto}: ${f.kredit} · ${f.lisensi}`,
+              }))}
             />
             <figcaption>
               <span className="dulu">{foto.keterangan ?? cb.nama}</span>
@@ -263,6 +296,16 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
               </span>
             </figcaption>
           </figure>
+        ) : (
+          petaDiSampul && (
+            <MapView
+              titik={titikPeta}
+              pusat={titikUtama}
+              label={t.petaLokasi(cb.nama)}
+              className={css.petaSampul}
+              b={b}
+            />
+          )
         )}
         <aside aria-labelledby="judul-lembar" className={css.samping}>
           <h2 id="judul-lembar" className="label">
@@ -284,20 +327,6 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
         </nav>
       )}
 
-      {cb.foto.length > 1 && (
-        <Section id="galeri" judul={t.galeri} keterangan={t.jumlahFoto(cb.foto.length)} latar={css.latarPutih}>
-          <PhotoAlbum
-            b={b}
-            foto={cb.foto.map((f, i) => ({
-              src: f.berkas,
-              kecil: f.kecil,
-              alt: f.keterangan ? `${cb.nama}: ${f.keterangan}` : `${cb.nama}, ${t.fotoKe(i + 1)}`,
-              kredit: `${TEKS[b].foto}: ${f.kredit} · ${f.lisensi}`,
-            }))}
-          />
-        </Section>
-      )}
-
       {cb.deskripsi && (
         <Section id="deskripsi" judul={t.deskripsi}>
           {t.hanyaId && <p className={css.hanyaId}>{t.hanyaId}</p>}
@@ -307,7 +336,7 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
         </Section>
       )}
 
-      {cb.nilai_penting && (
+      {cb.nilai_penting && !ringkasan && (
         <Section id="sejarah" judul={t.sejarah} latar={cb.deskripsi ? css.latarArsip : undefined}>
           {t.hanyaId && !cb.deskripsi && <p className={css.hanyaId}>{t.hanyaId}</p>}
           <div className={css.prosa} lang={asli}>
@@ -351,7 +380,7 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
       )}
 
       <section id="lokasi" aria-labelledby="judul-lokasi" className={css.latarPutih}>
-        <div className={`wadah ${css.lokasi}`}>
+        <div className={`wadah ${css.lokasi} ${petaDiSampul ? css.lokasiTanpaPeta : ""}`}>
           <div className={css.infoLokasi} data-muncul="">
             <h2 id="judul-lokasi">{t.lokasi}</h2>
             <p lang={asli}>{cb.alamat}</p>
@@ -385,29 +414,12 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
               </div>
             )}
             <p className={css.tautanPeta}>
-              {cb.koordinat && (
-                <a
-                  href={`https://www.openstreetmap.org/?mlat=${cb.koordinat.lat}&mlon=${cb.koordinat.lng}#map=18/${cb.koordinat.lat}/${cb.koordinat.lng}`}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {t.bukaOsm}
-                </a>
-              )}
-              <a
-                href={
-                  cb.koordinat
-                    ? `https://www.google.com/maps/dir/?api=1&destination=${tujuan}`
-                    : `https://www.google.com/maps/search/?api=1&query=${tujuan}`
-                }
-                target="_blank"
-                rel="noopener"
-              >
-                {cb.koordinat ? t.arah : t.cariGoogle}
+              <a href={urlMaps} target="_blank" rel="noopener">
+                {t.bukaGoogle}
               </a>
             </p>
           </div>
-          {titikUtama ? (
+          {petaDiSampul ? null : titikUtama ? (
             <MapView titik={titikPeta} pusat={titikUtama} label={t.petaLokasi(cb.nama)} className={css.peta} b={b} />
           ) : (
             <div className={css.petaKosong}>
@@ -436,6 +448,18 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
         </Section>
       )}
 
+      <aside aria-labelledby="judul-koreksi" className={css.koreksi}>
+        <div className="wadah">
+          <div>
+            <h2 id="judul-koreksi">{t.koreksiJudul}</h2>
+            <p>{t.koreksiTeks}</p>
+          </div>
+          <a href={mailKoreksi} className={css.tombolKedua}>
+            {t.koreksiTombol}
+          </a>
+        </div>
+      </aside>
+
       {sekitar.length > 0 && (
         <section id="sekitar" aria-labelledby="judul-sekitar" className={css.sekitar}>
           <div className="wadah">
@@ -445,7 +469,17 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
             <ul>
               {sekitar.map(({ cb: x, jarak }, i) => (
                 <li key={x.id} data-muncul="" style={{ "--urut": i } as CSSProperties}>
-                  <Card cb={ringkas(x)} keterangan={formatJarak(jarak, b)} b={b} />
+                  <Link href={tautan(x, b)} className={css.itemSekitar}>
+                    <Photo src={ringkas(x).foto} alt="" nama={x.nama} ukuran="kecil" b={b} />
+                    <span>
+                      <span className={css.namaSekitar} lang="id">
+                        {x.nama}
+                      </span>
+                      <span className={css.metaSekitar}>
+                        {l.jenis[x.jenis]} · {formatJarak(jarak, b)}
+                      </span>
+                    </span>
+                  </Link>
                 </li>
               ))}
             </ul>

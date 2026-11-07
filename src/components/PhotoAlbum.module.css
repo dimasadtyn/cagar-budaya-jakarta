@@ -29,6 +29,82 @@
   transform: scale(1.05);
 }
 
+.sampul {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sampul button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background: var(--arsip);
+  cursor: zoom-in;
+}
+
+.sampul img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.sampul button:hover img {
+  transform: scale(1.03);
+}
+
+.utama {
+  border-radius: var(--radius-kartu);
+}
+
+.utama img {
+  aspect-ratio: 3 / 2;
+}
+
+.semua {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius-tombol);
+  background: var(--putih);
+  color: var(--tinta);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--tinta) 20%, transparent);
+}
+
+.mini {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mini button {
+  border-radius: var(--radius-kecil);
+}
+
+.mini img {
+  aspect-ratio: 4 / 3;
+}
+
+.lebih {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--gelap) 55%, transparent);
+  color: var(--putih);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 .dialog {
   width: 100vw;
   max-width: none;
@@ -63,10 +139,76 @@
   pointer-events: none;
 }
 
-.dialog figure img {
+.panggung {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  touch-action: none;
+  cursor: zoom-in;
+  user-select: none;
+}
+
+.panggung[data-zoom] {
+  cursor: grab;
+}
+
+.panggung[data-zoom][data-seret] {
+  cursor: grabbing;
+}
+
+.panggung img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.panggung[data-seret] img {
+  transition: none;
+}
+
+.alat {
+  position: fixed;
+  top: 0.75rem;
+  left: 50%;
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--putih) 12%, transparent);
+}
+
+.alat button {
+  display: grid;
+  place-items: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--putih);
+  transition: background 0.2s;
+}
+
+.alat button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--putih) 18%, transparent);
+}
+
+.alat button:disabled {
+  opacity: 0.4;
+}
+
+.alat .persen {
+  min-width: 3.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
 }
 
 .dialog figcaption {

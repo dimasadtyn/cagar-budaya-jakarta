@@ -27,10 +27,10 @@ export default function ShareButtons({ judul, b = "id" }: { judul: string; b?: B
 
   return (
     <div className={css.aksi}>
-      <button type="button" onClick={bagikan}>
+      <button type="button" onClick={bagikan} aria-label={t.bagikan} title={t.bagikan}>
         <svg
-          width="16"
-          height="16"
+          width="18"
+          height="18"
           viewBox="0 0 16 16"
           fill="none"
           stroke="currentColor"
@@ -39,12 +39,11 @@ export default function ShareButtons({ judul, b = "id" }: { judul: string; b?: B
         >
           <path d="M8 10V2M5 5l3-3 3 3M3 8v5.5h10V8" />
         </svg>
-        {t.bagikan}
       </button>
-      <button type="button" onClick={salin}>
+      <button type="button" onClick={salin} aria-label={t.salin} title={t.salin}>
         <svg
-          width="16"
-          height="16"
+          width="18"
+          height="18"
           viewBox="0 0 16 16"
           fill="none"
           stroke="currentColor"
@@ -53,7 +52,6 @@ export default function ShareButtons({ judul, b = "id" }: { judul: string; b?: B
         >
           <path d="M6.5 9.5l3-3M7 4.5l1.2-1.2a2.5 2.5 0 0 1 3.5 3.5L10.5 8M9 11.5l-1.2 1.2a2.5 2.5 0 0 1-3.5-3.5L5.5 8" />
         </svg>
-        {t.salin}
       </button>
       <span role="status" className={css.pesan}>
         {pesan}
