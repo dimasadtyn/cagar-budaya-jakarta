@@ -40,6 +40,7 @@ corrections.json ─┘        │                                   ├─(npm 
 
 - `data/corrections.json`: perbaikan nilai Excel (mis. koordinat), diterapkan saat impor.
 - `data/supplements.json`: isian yang tidak ada di Excel (deskripsi, kondisi, foto, bacaan), digabung saat build.
+- `data/photos.json`: foto objek per slug; `npm run photos` mengonversinya dari folder foto asli ke `public/photos/`.
 
 Excel mentah tidak masuk repo karena memuat data pribadi narahubung. Lihat [data/source/README.md](data/source/README.md).
 

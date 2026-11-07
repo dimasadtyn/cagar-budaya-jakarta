@@ -40,5 +40,5 @@ export const ringkas = (cb: CagarBudaya): Ringkas => ({
   area: cb.area,
   model3d: cb.model_3d !== null,
   koordinat: cb.koordinat,
-  foto: cb.foto[0]?.berkas ?? null,
+  foto: cb.foto[0] ? (cb.foto[0].kecil ?? cb.foto[0].berkas) : null,
 });

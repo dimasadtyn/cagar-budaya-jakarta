@@ -33,6 +33,7 @@ export const KoordinatSchema = z.object({
 
 export const FotoSchema = z.object({
   berkas: z.string().startsWith("/"),
+  kecil: z.string().startsWith("/").optional(),
   kredit: z.string(),
   lisensi: z.string(),
   sumber_url: z.httpUrl().optional(),

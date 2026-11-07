@@ -1,8 +1,12 @@
 import "server-only";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { z } from "zod";
 import mentah from "../../data/heritage-sites.json";
 import berandaMentah from "../../data/home.json";
 import tambahanMentah from "../../data/supplements.json";
+import fotoMentah from "../../data/photos.json";
+import { berkasFoto, DaftarFotoSchema } from "./photos";
 import { dokumenCari } from "./search";
 import { jarakMeter } from "./geo";
 import { ringkas } from "./summary";
@@ -13,7 +17,33 @@ const tanpaPasangan = Object.keys(tambahan).filter((slug) => !mentah.some((cb) =
 if (tanpaPasangan.length)
   throw new Error(`data/supplements.json memuat slug yang tidak dikenal: ${tanpaPasangan.join(", ")}`);
 
-const semua: CagarBudaya[] = DataSchema.parse(mentah.map((cb) => ({ ...cb, ...tambahan[cb.slug] })));
+const daftarFoto = DaftarFotoSchema.parse(fotoMentah);
+const fotoTanpaPasangan = Object.keys(daftarFoto.objek).filter((slug) => !mentah.some((cb) => cb.slug === slug));
+if (fotoTanpaPasangan.length)
+  throw new Error(`data/photos.json memuat slug yang tidak dikenal: ${fotoTanpaPasangan.join(", ")}`);
+
+const fotoObjek = (slug: string) => {
+  const o = daftarFoto.objek[slug];
+  if (!o) return [];
+  return o.foto.map((f) => {
+    const jalur = berkasFoto(slug, f.asal);
+    for (const p of Object.values(jalur))
+      if (!existsSync(join("public", p))) throw new Error(`${p} belum ada, jalankan npm run photos`);
+    return {
+      ...jalur,
+      kredit: o.kredit ?? daftarFoto.kredit,
+      lisensi: o.lisensi ?? daftarFoto.lisensi,
+      ...(f.keterangan && { keterangan: f.keterangan }),
+    };
+  });
+};
+
+const semua: CagarBudaya[] = DataSchema.parse(
+  mentah.map((cb) => {
+    const t = tambahan[cb.slug];
+    return { ...cb, ...t, foto: [...fotoObjek(cb.slug), ...(t?.foto ?? [])] };
+  }),
+);
 const perSlug = new Map(semua.map((cb) => [cb.slug, cb]));
 
 export { LABEL_AREA, LABEL_JENIS, LABEL_WILAYAH, skPendek, tautan, teksKepemilikan } from "./labels";

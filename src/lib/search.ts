@@ -1,11 +1,19 @@
-import MiniSearch from "minisearch";
+import MiniSearch, { type SearchResult } from "minisearch";
 import { LABEL, LABEL_AREA } from "./labels";
 import { normal } from "./summary";
 import type { CagarBudaya } from "./schema";
 
-export type DokumenCari = { id: string; nama: string; lain: string; tempat: string; kategori: string; isi: string };
+export type DokumenCari = {
+  id: string;
+  nama: string;
+  kelompok: string;
+  lain: string;
+  tempat: string;
+  kategori: string;
+  isi: string;
+};
 
-const BOBOT = { nama: 4, lain: 3, kategori: 1.5, tempat: 1.5, isi: 0.5 };
+const BOBOT = { nama: 4, lain: 3, kelompok: 2, kategori: 1.5, tempat: 1.5, isi: 0.5 };
 
 const SINONIM: Record<string, string[]> = {
   masjid: ["mesjid", "mosque", "musala", "musholla", "langgar"],
@@ -13,7 +21,6 @@ const SINONIM: Record<string, string[]> = {
   klenteng: ["kelenteng", "temple", "vihara", "wihara"],
   makam: ["kuburan", "pemakaman", "grave", "tomb", "cemetery", "kerkhof"],
   rumah: ["house", "home", "residence", "kediaman"],
-  gedung: ["building", "bangunan"],
   jembatan: ["bridge"],
   pelabuhan: ["harbour", "harbor", "port"],
   pasar: ["market"],
@@ -61,7 +68,8 @@ const gabung = (xs: (string | null | undefined)[]) => xs.filter(Boolean).join(" 
 export function dokumenCari(cb: CagarBudaya, namaKawasan: string | null): DokumenCari {
   return {
     id: cb.id,
-    nama: gabung([cb.nama, cb.kelompok]),
+    nama: cb.nama,
+    kelompok: cb.kelompok ?? "",
     lain: gabung([...cb.nama_dahulu, ...cb.nama_lain]),
     tempat: gabung([cb.alamat, ...cb.kelurahan, ...cb.kecamatan, namaKawasan, cb.area && LABEL_AREA[cb.area]]),
     kategori: gabung([
@@ -148,11 +156,21 @@ function saranEjaan(kosakata: Map<string, number>, q: string) {
 
 export type HasilCari = { skor: Map<string, number>; saran: string | null };
 
+const BONUS_NAMA = 3;
+
+const skorAkhir = (hasil: SearchResult[]) =>
+  new Map(
+    hasil.map((h) => {
+      const kataDiNama = Object.values(h.match).filter((medan) => medan.includes("nama")).length;
+      return [h.id as string, kataDiNama >= h.queryTerms.length ? h.score * BONUS_NAMA : h.score];
+    }),
+  );
+
 export function cari({ mini, kosakata }: Indeks, q: string): HasilCari | null {
   if (!normal(q)) return null;
   const persis = mini.search(q, { combineWith: "AND", fuzzy: false });
-  if (persis.length) return { skor: new Map(persis.map((h) => [h.id as string, h.score])), saran: null };
+  if (persis.length) return { skor: skorAkhir(persis), saran: null };
   const longgar = mini.search(q, { combineWith: "AND" });
   const hasil = longgar.length ? longgar : mini.search(q, { combineWith: "OR" });
-  return { skor: new Map(hasil.map((h) => [h.id as string, h.score])), saran: saranEjaan(kosakata, q) };
+  return { skor: skorAkhir(hasil), saran: saranEjaan(kosakata, q) };
 }

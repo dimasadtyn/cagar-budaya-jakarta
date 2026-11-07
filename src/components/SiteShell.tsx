@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -9,15 +9,7 @@ import { NAMA_SITUS, URL_SITUS } from "@/lib/site";
 import { TEKS } from "@/lib/messages";
 import "../styles/global.css";
 
-const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-plus-jakarta", display: "swap" });
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-instrument-serif",
-  display: "swap",
-});
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap", preload: false });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 const GAMBAR_BAGIKAN = { url: "/og-image.jpg", width: 1200, height: 630, alt: "Museum Sejarah Jakarta" };
 
@@ -40,9 +32,9 @@ export const metadataDasar = (b: Bahasa): Metadata => ({
   twitter: { card: "summary_large_image" },
 });
 
-const SIAPKAN_GERAK = `var d=document.documentElement;try{var q=new URLSearchParams(location.search).get("tema");if(q==="disbud")sessionStorage.setItem("tema",q);else if(q==="asli")sessionStorage.removeItem("tema");if(sessionStorage.getItem("tema")==="disbud")d.dataset.tema="disbud"}catch(e){}if(!matchMedia("(prefers-reduced-motion: reduce)").matches){d.classList.add("gerak");setTimeout(function(){if(!d.dataset.muncul)d.classList.remove("gerak")},3000)}`;
+const SIAPKAN_GERAK = `var d=document.documentElement;if(!matchMedia("(prefers-reduced-motion: reduce)").matches){d.classList.add("gerak");setTimeout(function(){if(!d.dataset.muncul)d.classList.remove("gerak")},3000)}`;
 
-export const kelasHuruf = `${plusJakarta.variable} ${instrumentSerif.variable} ${inter.variable}`;
+export const kelasHuruf = inter.variable;
 
 export default function SiteShell({ b, children }: { b: Bahasa; children: ReactNode }) {
   return (

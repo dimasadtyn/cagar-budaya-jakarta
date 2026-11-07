@@ -24,6 +24,29 @@ Untuk petugas yang memperbarui isi website. Website ini statis: tidak ada panel 
 
 Kolom narahubung (nama dan nomor telepon) di Excel tidak pernah dibaca skrip. Jangan menambahkannya.
 
+## Menambah foto objek
+
+Foto asli disimpan di luar repo, satu folder per objek (contoh: `Foto Objek Cagar Budaya - Website/3. Masjid Al- Azhar (...)/`). Repo hanya menyimpan hasil konversinya di `public/photos/<slug>/`.
+
+1. Taruh foto asli (JPG/PNG/HEIC) di folder objeknya.
+2. Daftarkan di `data/photos.json`, urut sesuai tampilan. Foto pertama jadi sampul, kartu, dan pratinjau media sosial, jadi pilih tampak depan, bukan plakat atau detail.
+
+   ```json
+   "masjid-al-azhar": {
+     "folder": "3. Masjid Al- Azhar (Masjid Agung Al-Azhar)",
+     "foto": [
+       { "asal": "Salinan Al-Azhar_5.jpg", "keterangan": "Tampak depan masjid" },
+       { "asal": "Salinan Al-Azhar_4.jpeg" }
+     ]
+   }
+   ```
+
+   Untuk menurunkan foto dari website, hapus barisnya dari `foto` dan tulis nama berkasnya di `"abaikan": [...]`. Kredit dan lisensi bawaan ada di bagian atas berkas; isi `kredit`/`lisensi` di objeknya bila berbeda.
+
+3. Jalankan `npm run photos -- "<lokasi folder Foto Objek Cagar Budaya - Website>"`.
+
+Skrip memutar foto sesuai orientasi kamera, menghapus semua metadata (EXIF, GPS, kamera), lalu membuat WebP lebar 1600 px dan 640 px (untuk kartu dan thumbnail). Foto yang sudah dikonversi dilewati; berkas yang tidak lagi didaftarkan dihapus dari `public/photos/`. Skrip juga memberi tahu foto atau folder yang belum didaftarkan, dan menulis ulang `Progres Foto Cagar Budaya.xlsx` di folder foto asli (status foto semua objek). Tutup berkas itu di Excel sebelum menjalankan skrip.
+
 ## Menambah deskripsi, kondisi, foto, dan bacaan
 
 Isian yang tidak ada di Excel ditulis di `data/supplements.json`, dikelompokkan per slug objek (bagian akhir URL halaman detailnya). Daftar isian lengkap dan contohnya ada di [02-data-schema.md](02-data-schema.md#isian-tambahan-datasupplementsjson).
@@ -44,9 +67,9 @@ Isian yang tidak ada di Excel ditulis di `data/supplements.json`, dikelompokkan 
 }
 ```
 
-- Berkas foto diletakkan di `public/photos/...`, format WebP, sisi panjang sekitar 1600 px.
+- Bagian `foto` di sini untuk foto dari sumber lain (mis. berlisensi CC); foto Disbud lewat `data/photos.json`. Foto di sini tampil setelah foto dari `photos.json`.
 - **Hanya foto yang boleh dipakai untuk keperluan komersial** (milik Disbud, atau berlisensi CC BY / CC BY-SA / CC0). Kredit dan lisensi wajib diisi; keduanya tampil di bawah foto.
-- Foto pertama dipakai di kartu, halaman detail, dan pratinjau media sosial.
+- Bila ada lebih dari satu foto, semuanya tampil di bagian Galeri foto halaman detail.
 
 ## Mengoreksi data dari Excel
 

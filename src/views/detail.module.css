@@ -486,30 +486,6 @@
   line-height: 1.25;
 }
 
-.fotoLain {
-  margin: 2.5rem 0 0;
-}
-
-.fotoLain img {
-  display: block;
-  width: 100%;
-  border-radius: var(--radius-kartu);
-}
-
-.fotoLain figcaption {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.25rem 1rem;
-  margin-top: 0.625rem;
-  font-size: 0.8125rem;
-  color: var(--teks-sekunder);
-}
-
-.fotoLain figcaption :global(.dulu) {
-  font-size: 1rem;
-}
-
 .akses {
   color: var(--teks-sekunder);
 }

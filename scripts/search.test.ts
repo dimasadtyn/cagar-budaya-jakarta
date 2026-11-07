@@ -11,7 +11,8 @@ const indeks = buatIndeks(
 );
 const nama = new Map(data.map((cb) => [cb.id, cb.nama]));
 
-const hasil = (q: string) => [...(cari(indeks, q)?.skor ?? new Map())].map(([id]) => nama.get(id)!);
+const hasil = (q: string) =>
+  [...(cari(indeks, q)?.skor ?? new Map())].sort((a, b) => b[1] - a[1]).map(([id]) => nama.get(id)!);
 const teratas = (q: string) => hasil(q)[0];
 
 test("kueri kosong tidak menyaring", () => {
@@ -72,4 +73,14 @@ test("saran ejaan hanya muncul bila ada kata yang dikoreksi", () => {
   assert.equal(cari(indeks, "gedung kesenain")?.saran, "gedung kesenian");
   assert.equal(cari(indeks, "museum wayang")?.saran, null);
   assert.equal(cari(indeks, "fata")?.saran, null);
+});
+
+test("nama yang memuat semua kata didahulukan", () => {
+  const atas = hasil("gedung kantor").slice(0, 5);
+  assert.ok(atas.includes("Gedung Kantor Perum Peruri"));
+  assert.ok(atas.every((n) => /gedung/i.test(n) && /kantor/i.test(n)));
+});
+
+test("kata umum tidak menyamakan semua bangunan", () => {
+  assert.ok(hasil("gedung").length < 100);
 });

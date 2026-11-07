@@ -5,7 +5,7 @@ import type { Bahasa } from "@/lib/labels";
 import { TEKS } from "@/lib/messages";
 import css from "./PhotoAlbum.module.css";
 
-type Foto = { src: string; alt: string };
+type Foto = { src: string; alt: string; kecil?: string; kredit?: string };
 
 const Ikon = ({ d }: { d: string }) => (
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
@@ -57,7 +57,7 @@ export default function PhotoAlbum({ foto, b }: { foto: Foto[]; b: Bahasa }) {
               }}
               aria-label={t.buka(f.alt)}
             >
-              <img src={f.src} alt="" loading="lazy" />
+              <img src={f.kecil ?? f.src} alt="" loading="lazy" />
             </button>
           </li>
         ))}
@@ -82,7 +82,10 @@ export default function PhotoAlbum({ foto, b }: { foto: Foto[]; b: Bahasa }) {
         {aktif && (
           <figure>
             <img src={aktif.src} alt={aktif.alt} />
-            <figcaption>{t.urutan(indeks! + 1, foto.length)}</figcaption>
+            <figcaption>
+              {t.urutan(indeks! + 1, foto.length)}
+              {aktif.kredit && ` · ${aktif.kredit}`}
+            </figcaption>
           </figure>
         )}
         {foto.length > 1 && (
@@ -90,7 +93,7 @@ export default function PhotoAlbum({ foto, b }: { foto: Foto[]; b: Bahasa }) {
             {foto.map((f, i) => (
               <li key={f.src}>
                 <button type="button" onClick={() => setIndeks(i)} aria-label={f.alt} aria-current={i === indeks}>
-                  <img src={f.src} alt="" loading="lazy" />
+                  <img src={f.kecil ?? f.src} alt="" loading="lazy" />
                 </button>
               </li>
             ))}

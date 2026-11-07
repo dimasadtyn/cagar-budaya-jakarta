@@ -10,6 +10,7 @@ import Card from "@/components/Card";
 import ConditionReport, { warnaTingkat } from "@/components/ConditionReport";
 import DataSheet from "@/components/DataSheet";
 import Model3D from "@/components/Model3D";
+import PhotoAlbum from "@/components/PhotoAlbum";
 import MapView, { type Titik } from "@/components/MapView";
 import { anggotaKawasan, cariCagarBudaya, daftarCagarBudaya, terdekat } from "@/lib/data";
 import { formatJarak, formatKoordinat } from "@/lib/geo";
@@ -90,20 +91,6 @@ const Paragraphs = ({ teks }: { teks: string }) =>
     .filter((p) => p.trim())
     .map((p, i) => <p key={i}>{p}</p>);
 
-function ExtraPhoto({ foto, nama, b }: { foto: CagarBudaya["foto"][number]; nama: string; b: Bahasa }) {
-  return (
-    <figure className={css.fotoLain}>
-      <img src={foto.berkas} alt={foto.keterangan ?? nama} loading="lazy" />
-      <figcaption>
-        {foto.keterangan && <span className="dulu">{foto.keterangan}</span>}
-        <span>
-          {TEKS[b].foto}: {foto.kredit} · {foto.lisensi}
-        </span>
-      </figcaption>
-    </figure>
-  );
-}
-
 function History({ teks }: { teks: string }) {
   const blok: (string | string[])[] = [];
   for (const baris of teks.split("\n")) {
@@ -173,7 +160,7 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
       ]
     : [];
   const titikAnggota = anggota.flatMap((a) => keTitik(a, b, `${l.jenis[a.jenis]} · ${a.alamat}`));
-  const [foto, fotoDeskripsi, fotoSejarah] = cb.foto;
+  const foto = cb.foto[0];
   const adaKondisi = !!cb.kondisi || anggota.some((a) => a.kondisi?.umum);
   const tujuan = cb.koordinat
     ? `${cb.koordinat.lat},${cb.koordinat.lng}`
@@ -181,6 +168,7 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
   const jelajah = RUTE.jelajah[b];
 
   const isi = [
+    cb.foto.length > 1 && { id: "galeri", label: t.galeri },
     cb.deskripsi && { id: "deskripsi", label: t.deskripsi },
     cb.nilai_penting && { id: "sejarah", label: t.sejarah },
     cb.model_3d && { id: "model-3d", label: TEKS[b].model3d },
@@ -257,7 +245,17 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
       <div className={`wadah ${css.sampul} ${foto ? "" : css.tanpaFoto}`}>
         {foto && (
           <figure className={css.figur}>
-            <Photo src={foto.berkas} alt={cb.nama} nama={cb.nama} rasio="3/2" ukuran="besar" b={b} />
+            <Photo
+              src={foto.berkas}
+              srcSet={foto.kecil && `${foto.kecil} 640w, ${foto.berkas} 1600w`}
+              sizes="(min-width: 64rem) 60vw, 100vw"
+              prioritas
+              alt={foto.keterangan ? `${cb.nama}: ${foto.keterangan}` : cb.nama}
+              nama={cb.nama}
+              rasio="3/2"
+              ukuran="besar"
+              b={b}
+            />
             <figcaption>
               <span className="dulu">{foto.keterangan ?? cb.nama}</span>
               <span>
@@ -286,13 +284,26 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
         </nav>
       )}
 
+      {cb.foto.length > 1 && (
+        <Section id="galeri" judul={t.galeri} keterangan={t.jumlahFoto(cb.foto.length)} latar={css.latarPutih}>
+          <PhotoAlbum
+            b={b}
+            foto={cb.foto.map((f, i) => ({
+              src: f.berkas,
+              kecil: f.kecil,
+              alt: f.keterangan ? `${cb.nama}: ${f.keterangan}` : `${cb.nama}, ${t.fotoKe(i + 1)}`,
+              kredit: `${TEKS[b].foto}: ${f.kredit} · ${f.lisensi}`,
+            }))}
+          />
+        </Section>
+      )}
+
       {cb.deskripsi && (
         <Section id="deskripsi" judul={t.deskripsi}>
           {t.hanyaId && <p className={css.hanyaId}>{t.hanyaId}</p>}
           <div className={`${css.prosa} ${css.prosaDeskripsi}`} lang={asli}>
             <Paragraphs teks={cb.deskripsi} />
           </div>
-          {fotoDeskripsi && <ExtraPhoto foto={fotoDeskripsi} nama={cb.nama} b={b} />}
         </Section>
       )}
 
@@ -302,7 +313,6 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
           <div className={css.prosa} lang={asli}>
             <History teks={cb.nilai_penting} />
           </div>
-          {fotoSejarah && <ExtraPhoto foto={fotoSejarah} nama={cb.nama} b={b} />}
         </Section>
       )}
 

@@ -4,19 +4,19 @@ Versi 0.1 · 30 Oktober 2026
 
 ## Ringkasan
 
-| Bagian        | Pilihan                                                                | Alasan                                                                                                                                        |
-| ------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Framework     | Next.js 16 (App Router) + TypeScript, `output: "export"`               | Sama dengan website HBIM lama, jadi komponen dan embed 3D bisa dipakai ulang. Hasilnya folder HTML statis yang bisa dipasang di server Disbud |
-| Gaya          | CSS biasa + CSS Modules, token warna/huruf di `:root`                  | Tidak perlu Tailwind/UI kit untuk ±10 komponen. Token mengikuti sistem visual di presentasi                                                   |
-| Huruf         | `next/font/google`: Plus Jakarta Sans, Instrument Serif                | Berkas huruf diunduh saat build dan disajikan dari server sendiri. Keduanya OFL                                                               |
-| Baca Excel    | `exceljs` (di skrip impor saja, bukan di website)                      | Masih dirawat. Paket `xlsx` di npm sudah lama tidak diperbarui                                                                                |
-| Validasi data | `zod`                                                                  | Build gagal bila data rusak, sebelum sampai ke pengunjung                                                                                     |
-| Konversi UTM  | `proj4` (skrip impor saja)                                             | 16 koordinat memakai UTM zona 48S                                                                                                             |
-| Pencarian     | MiniSearch di browser, indeks dibangun dari `src/lib/search.ts`        | 333 objek cukup diindeks di browser; tahan salah ketik, pencarian awalan kata, peringkat relevansi, dan sinonim ID/EN tanpa server pencarian  |
-| Peta          | `maplibre-gl` + tile vektor berbasis OpenStreetMap                     | Lihat "Peta" di bawah                                                                                                                         |
-| Carousel      | komponen sendiri (CSS scroll-snap + sedikit JS)                        | Kebutuhannya spesifik (blur kiri, jeda, reduced motion); pustaka carousel tidak sepadan bebannya                                              |
-| Foto          | WebP disiapkan manual (`sharp`) dan dicatat di `data/corrections.json` | Optimasi gambar bawaan `next/image` tidak berjalan di static export. Skrip ukuran ganda menyusul setelah foto resmi diterima                  |
-| Model 3D      | `@google/model-viewer` + `.glb` di `public/models/`                    | Lihat "Model 3D" di bawah                                                                                                                     |
+| Bagian        | Pilihan                                                                                           | Alasan                                                                                                                                        |
+| ------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework     | Next.js 16 (App Router) + TypeScript, `output: "export"`                                          | Sama dengan website HBIM lama, jadi komponen dan embed 3D bisa dipakai ulang. Hasilnya folder HTML statis yang bisa dipasang di server Disbud |
+| Gaya          | CSS biasa + CSS Modules, token warna/huruf di `:root`                                             | Tidak perlu Tailwind/UI kit untuk ±10 komponen. Token mengikuti sistem visual di presentasi                                                   |
+| Huruf         | `next/font/google`: Inter                                                                         | Berkas huruf diunduh saat build dan disajikan dari server sendiri. Lisensi OFL                                                                |
+| Baca Excel    | `exceljs` (di skrip impor saja, bukan di website)                                                 | Masih dirawat. Paket `xlsx` di npm sudah lama tidak diperbarui                                                                                |
+| Validasi data | `zod`                                                                                             | Build gagal bila data rusak, sebelum sampai ke pengunjung                                                                                     |
+| Konversi UTM  | `proj4` (skrip impor saja)                                                                        | 16 koordinat memakai UTM zona 48S                                                                                                             |
+| Pencarian     | MiniSearch di browser, indeks dibangun dari `src/lib/search.ts`                                   | 333 objek cukup diindeks di browser; tahan salah ketik, pencarian awalan kata, peringkat relevansi, dan sinonim ID/EN tanpa server pencarian  |
+| Peta          | `maplibre-gl` + tile vektor berbasis OpenStreetMap                                                | Lihat "Peta" di bawah                                                                                                                         |
+| Carousel      | komponen sendiri (CSS scroll-snap + sedikit JS)                                                   | Kebutuhannya spesifik (blur kiri, jeda, reduced motion); pustaka carousel tidak sepadan bebannya                                              |
+| Foto          | `npm run photos` (`sharp`): WebP 1600 px dan 640 px tanpa metadata, dicatat di `data/photos.json` | Optimasi gambar bawaan `next/image` tidak berjalan di static export. Foto asli (±1 GB) tetap di luar repo                                     |
+| Model 3D      | `@google/model-viewer` + `.glb` di `public/models/`                                               | Lihat "Model 3D" di bawah                                                                                                                     |
 
 Sebelum menulis kode, baca panduan di `node_modules/next/dist/docs/` untuk versi yang terpasang (lihat `AGENTS.md`).
 
@@ -63,6 +63,7 @@ cagar-budaya-jakarta/
 │  ├─ source/                      Excel mentah dari Disbud (tidak masuk git)
 │  │                               ── diisi manual ──
 │  ├─ supplements.json             deskripsi, rincian, kondisi, foto, bacaan per slug
+│  ├─ photos.json                  foto objek: folder asal, urutan, keterangan, kredit
 │  ├─ corrections.json             perbaikan hasil impor per id (mis. koordinat)
 │  ├─ manual-matches.json          pasangan sheet utama ↔ sheet perwilayah
 │  ├─ 3d-models.json               jalur model 3D (.glb) dan foto point cloud
