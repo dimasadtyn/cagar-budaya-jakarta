@@ -121,6 +121,15 @@ Lewat komputer sendiri: `npx wrangler login` sekali, buat `.env.local` berisi `N
 3. Server Apache: salin juga `server/.htaccess` ke folder yang sama. Server nginx: masukkan isi `server/nginx.conf` ke blok `server { }` situs ini.
 4. Periksa beberapa halaman, termasuk satu URL lama (misalnya `/situs-museum-bahari`) yang harus beralih ke halaman barunya.
 
+## Serah terima ke server Disbud
+
+Website resmi dipasang di server Apache Disbud. Cloudflare hanya dipakai untuk pratinjau selama pengembangan.
+
+1. Pasang di server Apache sesuai bagian sebelumnya, dengan `NEXT_PUBLIC_SITE_URL` berisi domain resmi saat build.
+2. Setelah domain resmi aktif, hapus worker `cagar-budaya-jakarta` di dashboard Cloudflare supaya alamat workers.dev tidak lagi menyajikan salinan situs.
+3. Hapus berkas khusus Cloudflare dari repo: `wrangler.jsonc`, `public/_headers`, `public/_redirects`, `server/nginx.conf`, paket `wrangler` (`npm uninstall wrangler`), skrip `preview` dan `deploy` di `package.json`, serta bagian "Memasang di Cloudflare" di panduan ini.
+4. Ganti `EMAIL_KOREKSI` di `src/lib/site.ts` bila Disbud memakai alamat email sendiri.
+
 ## Bila ada masalah
 
 | Gejala                         | Penyebab yang biasa                                                                          |

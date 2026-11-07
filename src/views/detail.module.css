@@ -40,6 +40,8 @@
 }
 
 .remah a {
+  display: inline-block;
+  padding-block: 0.25rem;
   transition: color 0.2s;
 }
 
@@ -433,6 +435,20 @@
   columns: 2 18rem;
   column-gap: 2rem;
   border-top: 1px solid var(--tinta);
+}
+
+.semuaAnggota {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--genteng);
+}
+
+.semuaAnggota:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .daftar li {

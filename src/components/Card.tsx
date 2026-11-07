@@ -10,7 +10,7 @@ export default function Card({ cb, keterangan, b = "id" }: { cb: Ringkas; ketera
   return (
     <Link href={tautan(cb, b)} className={css.kartu}>
       <div className={css.media}>
-        <Photo src={cb.foto} alt={cb.nama} nama={cb.nama} b={b} />
+        <Photo src={cb.foto} alt={cb.nama} nama={cb.nama} jenis={cb.jenis} b={b} />
         {cb.model3d && <span className={css.lencana}>{TEKS[b].model3d}</span>}
       </div>
       <div className={css.isi}>

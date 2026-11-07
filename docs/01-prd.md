@@ -142,7 +142,7 @@ Mengikuti presentasi: 2–27 November 2026.
 
 | #   | Pertanyaan                                                                                                                                                | Untuk        | Dampak bila belum dijawab                          |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------------------------------------- |
-| 1   | Jenis server website Disbud (Apache/nginx/lainnya) dan cara mengunggah                                                                                    | Disbud (TI)  | Pengalihan URL dan pemasangan tidak bisa diuji     |
+| 1   | Cara mengunggah ke server Disbud (jenis server sudah dikonfirmasi: Apache)                                                                                | Disbud (TI)  | Pemasangan tidak bisa diuji                        |
 | 2   | Halaman arsip, literatur, dan glosarium lama: dipindahkan, digabung ke "Bacaan terkait", atau dihapus?                                                    | Disbud       | Pengalihan URL bagian 5 belum lengkap              |
 | 3   | Foto untuk carousel dan halaman detail, beserta izinnya                                                                                                   | Disbud       | Pakai foto Wikimedia berlisensi terbuka sementara  |
 | 4   | "Kawasan Kota Tua" tercatat di 6 baris: satu objek yang mencakup 6 kelurahan?                                                                             | Disbud       | Dianggap satu objek                                |

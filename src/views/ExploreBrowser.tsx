@@ -47,7 +47,7 @@ function baca(qs: string) {
   return {
     q,
     s: Object.fromEntries(KUNCI.flatMap((k) => (params.get(k) ? [[k, params.get(k)!]] : []))) as Saring,
-    urut: params.get("urut") ?? (q ? "relevan" : "nama"),
+    urut: params.get("urut") ?? (q ? "relevan" : "foto"),
     tampilan: (TAMPILAN as readonly string[]).includes(t ?? "") ? (t as Tampilan) : "grid",
   };
 }
@@ -198,7 +198,7 @@ export default function ExploreBrowser({
           ? skor.get(b.id)! - skor.get(a.id)!
           : urut === "nama-z"
             ? b.nama.localeCompare(a.nama, "id")
-            : a.nama.localeCompare(b.nama, "id"),
+            : (urut === "foto" ? Number(!!b.foto) - Number(!!a.foto) : 0) || a.nama.localeCompare(b.nama, "id"),
       ),
     [data, s, skor, urut],
   );
@@ -357,9 +357,10 @@ export default function ExploreBrowser({
               <select
                 className={css.pilih}
                 value={urut}
-                onChange={(e) => ubah({ urut: e.target.value === (q ? "relevan" : "nama") ? null : e.target.value })}
+                onChange={(e) => ubah({ urut: e.target.value === (q ? "relevan" : "foto") ? null : e.target.value })}
               >
                 {q && <option value="relevan">{t.relevan}</option>}
+                <option value="foto">{t.berfoto}</option>
                 <option value="nama">{t.az}</option>
                 <option value="nama-z">{t.za}</option>
               </select>
@@ -419,7 +420,7 @@ export default function ExploreBrowser({
               {hasil.slice(0, batas).map((r, i) => (
                 <tr key={r.id} style={urutan(i)}>
                   <td className={css.selFoto}>
-                    <Photo src={r.foto} alt="" nama={r.nama} ukuran="kecil" b={b} />
+                    <Photo src={r.foto} alt="" nama={r.nama} jenis={r.jenis} ukuran="kecil" b={b} />
                   </td>
                   <td className={css.selNama}>
                     <Link href={tautan(r, b)} lang="id">

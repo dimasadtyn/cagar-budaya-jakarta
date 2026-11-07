@@ -29,6 +29,8 @@
 }
 
 .remah a {
+  display: inline-block;
+  padding-block: 0.25rem;
   transition: color 0.2s;
 }
 

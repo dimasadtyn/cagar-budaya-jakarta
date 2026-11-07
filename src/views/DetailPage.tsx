@@ -112,6 +112,7 @@ function History({ teks }: { teks: string }) {
 }
 
 const PANJANG_RINGKASAN = 320;
+const BATAS_ANGGOTA = 6;
 
 const keTitik = (x: CagarBudaya, b: Bahasa, keterangan: string, utama = false): Titik[] =>
   x.koordinat ? [{ id: x.id, ...x.koordinat, nama: x.nama, href: tautan(x, b), keterangan, utama }] : [];
@@ -362,20 +363,27 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
           {titikAnggota.length > 0 && (
             <MapView titik={titikAnggota} label={t.petaKawasan(cb.nama)} kelompok className={css.petaKawasan} b={b} />
           )}
-          {JENIS.filter((j) => anggota.some((a) => a.jenis === j)).map((j) => (
-            <div key={j} className={css.kelompokAnggota}>
-              <h3 className="label">{l.jenis[j]}</h3>
-              <ul className={css.daftar} lang={asli}>
-                {anggota
-                  .filter((a) => a.jenis === j)
-                  .map((a) => (
+          {JENIS.map((j) => {
+            const daftar = anggota.filter((a) => a.jenis === j);
+            if (!daftar.length) return null;
+            return (
+              <div key={j} className={css.kelompokAnggota}>
+                <h3 className="label">{l.jenis[j]}</h3>
+                <ul className={css.daftar} lang={asli}>
+                  {daftar.slice(0, BATAS_ANGGOTA).map((a) => (
                     <li key={a.id}>
                       <Link href={tautan(a, b)}>{a.nama}</Link>
                     </li>
                   ))}
-              </ul>
-            </div>
-          ))}
+                </ul>
+                {daftar.length > BATAS_ANGGOTA && (
+                  <Link href={`${jelajah}?kawasan=${cb.slug}&jenis=${j}`} className={css.semuaAnggota}>
+                    {t.semuaAnggota(daftar.length, l.jenis[j])} →
+                  </Link>
+                )}
+              </div>
+            );
+          })}
         </Section>
       )}
 
@@ -470,7 +478,7 @@ export default function DetailPage({ b, jenis, slug }: { b: Bahasa; jenis: strin
               {sekitar.map(({ cb: x, jarak }, i) => (
                 <li key={x.id} data-muncul="" style={{ "--urut": i } as CSSProperties}>
                   <Link href={tautan(x, b)} className={css.itemSekitar}>
-                    <Photo src={ringkas(x).foto} alt="" nama={x.nama} ukuran="kecil" b={b} />
+                    <Photo src={ringkas(x).foto} alt="" nama={x.nama} jenis={x.jenis} ukuran="kecil" b={b} />
                     <span>
                       <span className={css.namaSekitar} lang="id">
                         {x.nama}

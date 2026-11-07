@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { RUTE, type Bahasa } from "@/lib/labels";
 import { TEKS } from "@/lib/messages";
+import { EMAIL_KOREKSI } from "@/lib/site";
 import css from "./Footer.module.css";
 
 export default function Footer({ b }: { b: Bahasa }) {
@@ -12,6 +13,9 @@ export default function Footer({ b }: { b: Bahasa }) {
           <p className={css.judul}>Cagar Budaya Jakarta</p>
           <p className={`dulu ${css.moto}`}>{t.moto}</p>
           <p>{t.dinas}</p>
+          <p className={css.masukan}>
+            {t.kakiMasukan} <a href={`mailto:${EMAIL_KOREKSI}`}>{EMAIL_KOREKSI}</a>
+          </p>
         </div>
         <ul className={css.tautan}>
           <li>

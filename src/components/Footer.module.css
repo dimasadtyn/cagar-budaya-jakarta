@@ -31,6 +31,19 @@
   color: var(--kaki-redup);
 }
 
+.masukan {
+  margin-top: 1rem;
+}
+
+.masukan a {
+  display: inline-block;
+  padding-block: 0.25rem;
+  font-weight: 600;
+  color: var(--kaki-tautan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .tautan {
   display: grid;
   grid-template-columns: repeat(2, minmax(10rem, 1fr));

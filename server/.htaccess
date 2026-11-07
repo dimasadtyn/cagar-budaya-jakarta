@@ -5,6 +5,11 @@ Options -Indexes
 DirectorySlash On
 AddType model/gltf-binary .glb
 
+# Berkas konfigurasi Cloudflare ikut tersalin ke out/; jangan disajikan.
+<FilesMatch "^_(headers|redirects)$">
+  Require all denied
+</FilesMatch>
+
 # Pengalihan URL website HBIM lama (PRD bagian 5)
 RedirectMatch 301 ^/tentang-kami/?$ /tentang/
 RedirectMatch 301 ^/(hbim|point-clouds|plan-section)/?$ /model-3d/

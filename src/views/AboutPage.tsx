@@ -5,6 +5,7 @@ import { daftarCagarBudaya, denganModel3D, jumlahPerJenis } from "@/lib/data";
 import { alternatif, LABEL, RUTE, type Bahasa } from "@/lib/labels";
 import { JENIS } from "@/lib/schema";
 import { TEKS } from "@/lib/messages";
+import { EMAIL_KOREKSI } from "@/lib/site";
 import css from "./shared.module.css";
 
 const ExternalLink = ({ href, children }: { href: string; children: ReactNode }) => (
@@ -79,8 +80,8 @@ const ISI = {
     kontak: "Kontak",
     teksKontak: (
       <p>
-        Menemukan data yang keliru atau punya informasi tambahan tentang sebuah cagar budaya? Sampaikan kepada Dinas
-        Kebudayaan Provinsi DKI Jakarta.
+        Menemukan data yang keliru, punya foto, atau informasi tambahan tentang sebuah cagar budaya? Kirim ke{" "}
+        <a href={`mailto:${EMAIL_KOREKSI}`}>{EMAIL_KOREKSI}</a>. Setiap masukan diperiksa sebelum katalog diperbarui.
       </p>
     ),
   },
@@ -155,8 +156,9 @@ const ISI = {
     kontak: "Contact",
     teksKontak: (
       <p>
-        Found an error, or have more information about a heritage site? Please let the Department of Culture of DKI
-        Jakarta Province know.
+        Found an error, or have photos or more information about a heritage site? Email{" "}
+        <a href={`mailto:${EMAIL_KOREKSI}`}>{EMAIL_KOREKSI}</a>. Every submission is checked before the catalogue is
+        updated.
       </p>
     ),
   },
