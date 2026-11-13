@@ -68,6 +68,7 @@ Rincian tiap folder ada di [docs/03-technical-decisions.md](docs/03-technical-de
 | [03-technical-decisions.md](docs/03-technical-decisions.md) | Stack, struktur folder, dua bahasa, peta, build dan pemasangan                           |
 | [04-data-findings.md](docs/04-data-findings.md)             | Hasil pemeriksaan Excel dan hal yang perlu dikonfirmasi ke Disbud                        |
 | [05-maintenance-guide.md](docs/05-maintenance-guide.md)     | Untuk petugas: memperbarui data, menambah foto, mengoreksi koordinat, memasang di server |
+| [06-work-log.md](docs/06-work-log.md)                       | Laporan pekerjaan per tahap dan hal yang masih menunggu Disbud                           |
 
 ## Lisensi konten
 

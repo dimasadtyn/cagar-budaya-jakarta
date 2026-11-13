@@ -45,7 +45,7 @@ Foto asli disimpan di luar repo, satu folder per objek (contoh: `Foto Objek Caga
 
 3. Jalankan `npm run photos -- "<lokasi folder Foto Objek Cagar Budaya - Website>"`.
 
-Skrip memutar foto sesuai orientasi kamera, menghapus semua metadata (EXIF, GPS, kamera), lalu membuat WebP lebar 1600 px dan 640 px (untuk kartu dan thumbnail). Foto yang sudah dikonversi dilewati; berkas yang tidak lagi didaftarkan dihapus dari `public/photos/`. Skrip juga memberi tahu foto atau folder yang belum didaftarkan, dan menulis ulang `Progres Foto Cagar Budaya.xlsx` di folder foto asli (status foto semua objek). Tutup berkas itu di Excel sebelum menjalankan skrip.
+Skrip memutar foto sesuai orientasi kamera, menghapus semua metadata (EXIF, GPS, kamera), lalu membuat WebP lebar 1600 px dan 640 px (untuk kartu dan thumbnail). Foto yang sudah dikonversi dilewati; berkas yang tidak lagi didaftarkan dihapus dari `public/photos/`. Skrip juga memberi tahu foto atau folder yang belum didaftarkan, dan menulis ulang `Progres Foto Cagar Budaya.xlsx` di folder foto asli (status foto semua objek). Sheet **Riwayat** di berkas itu menambah satu baris tiap kali ada perubahan: tanggal, jumlah objek dan foto, serta objek yang baru tampil atau berubah jumlah fotonya. Riwayat dibaca dari berkas lama, jadi jangan hapus berkasnya. Tutup berkas itu di Excel sebelum menjalankan skrip.
 
 ## Menambah deskripsi, kondisi, foto, dan bacaan
 

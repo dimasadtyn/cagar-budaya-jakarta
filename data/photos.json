@@ -392,8 +392,19 @@
           "keterangan": "Gerbang makam"
         },
         {
+          "asal": "Salinan DSC06297.jpg",
+          "keterangan": "Kompleks makam"
+        },
+        {
           "asal": "IMG_0040.JPG",
           "keterangan": "Makam"
+        },
+        {
+          "asal": "Salinan DSC06334-Pano.jpg",
+          "keterangan": "Bagian dalam makam"
+        },
+        {
+          "asal": "Salinan DSC06337.jpg"
         },
         {
           "asal": "IMG_0056.JPG",
@@ -519,7 +530,15 @@
     },
     "lapangan-golf-rawamangun": {
       "folder": "30. Lapangan Golf Rawamangun",
-      "foto": []
+      "foto": [
+        {
+          "asal": "Salinan 1.-23.jpg",
+          "keterangan": "Lapangan golf dari udara"
+        },
+        {
+          "asal": "Salinan 1.-25.jpg"
+        }
+      ]
     },
     "kompleks-bangunan-vincentius-putri": {
       "folder": "31. Kompleks Bangunan Vincentius Putri",
@@ -547,7 +566,16 @@
     },
     "stasiun-jatinegara": {
       "folder": "37. Stasiun Jatinegara",
-      "foto": []
+      "foto": [
+        {
+          "asal": "Salinan DSC04824-2-1.jpg",
+          "keterangan": "Stasiun dari jalan"
+        },
+        {
+          "asal": "Salinan Stasiun Jatinegara2.jpg",
+          "keterangan": "Papan nama stasiun"
+        }
+      ]
     },
     "golok-cakung-no-i": {
       "folder": "38. Golok Cakung No.1",
@@ -615,11 +643,49 @@
     },
     "gereja-immanuel": {
       "folder": "54. Gereja Immanuel",
-      "foto": []
+      "foto": [
+        {
+          "asal": "Salinan Imanuel_56.JPG",
+          "keterangan": "Tampak depan gereja"
+        },
+        {
+          "asal": "Salinan DJI_20241126133118_0042_D.JPG",
+          "keterangan": "Gereja dari udara"
+        },
+        {
+          "asal": "Salinan Imanuel_34.jpg",
+          "keterangan": "Ruang ibadah"
+        },
+        {
+          "asal": "Salinan Imanuel_42.jpg",
+          "keterangan": "Mimbar"
+        },
+        {
+          "asal": "Salinan Imanuel_51.jpg",
+          "keterangan": "Orgel"
+        },
+        {
+          "asal": "Salinan Imanuel_54.jpg",
+          "keterangan": "Balkon"
+        }
+      ]
     },
     "balai-seni-wisma-seni-galeri-nasional": {
       "folder": "55. Galeri Nasional",
-      "foto": []
+      "foto": [
+        {
+          "asal": "Salinan GALNAS_3.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan GALNAS_2.jpg",
+          "keterangan": "Halaman depan"
+        },
+        {
+          "asal": "Salinan GALNAS_5.jpg",
+          "keterangan": "Sayap gedung"
+        }
+      ]
     },
     "direktorat-jendral-perhubungan-laut": {
       "folder": "56. Direktorat Jendral Perhubungan (Kementerian Perhubungan RI)",
@@ -663,7 +729,12 @@
     },
     "monumen-nasional": {
       "folder": "66. Monumen Nasional",
-      "foto": []
+      "foto": [
+        {
+          "asal": "Salinan Monas.jpg",
+          "keterangan": "Monas dari ketinggian"
+        }
+      ]
     },
     "gedung-perusahaan-listrik-negara": {
       "folder": "67. Gedung Perusahaan Listrik Negara",
@@ -671,7 +742,27 @@
     },
     "jembatan-dan-patung-harmoni": {
       "folder": "68. Jembatan dan Patung Harmoni",
-      "foto": []
+      "foto": [
+        {
+          "asal": "Salinan Patung Harmoni_1.jpg",
+          "keterangan": "Jembatan Harmoni"
+        },
+        {
+          "asal": "Salinan Patung Harmoni_10.jpg",
+          "keterangan": "Patung Hermes"
+        },
+        {
+          "asal": "Salinan Patung Harmoni_11.jpg",
+          "keterangan": "Detail patung"
+        },
+        {
+          "asal": "Salinan Patung Harmoni_2.jpg",
+          "keterangan": "Jembatan dari udara"
+        },
+        {
+          "asal": "Salinan Patung Harmoni_3.jpg"
+        }
+      ]
     },
     "kantor-pusat-pt-garuda-indonesia-kebon-sirih": {
       "folder": "69. Kantor Pusat PT Garuda Indonesia (Persero) Kebon Sirih",
@@ -692,6 +783,2253 @@
     "arca-agastya-candi-banon-nomor-inventaris-63-b-4846": {
       "folder": "73. Arca Agastya Candi Banon Nomor Inventaris 63 B 4846",
       "foto": []
+    },
+    "arca-siwa-mahadewa-candi-banon-koleksi-museum-nasional-indonesia": {
+      "folder": "74. Arca Siwa Mahadewa Candi Banon Koleksi Museum Nasional Indonesia Nomor Inventaris 23 A4341",
+      "foto": []
+    },
+    "prasasti-canggal-koleksi-museum-nasional-indonesia-nomor-inventaris-d": {
+      "folder": "75. Prasasti Canggal Koleksi Museum Nasional Indonesia Nomor Inventaris D 4",
+      "foto": []
+    },
+    "prasasti-kota-kapur-koleksi-museum-nasional-indonesia-nomor": {
+      "folder": "76. Prasasti Kota Kapur Koleksi Museum Nasional Indonesia Nomor Inventaris D 90",
+      "foto": []
+    },
+    "arca-brahma-koleksi-museum-nasional-indonesia-nomor-inventaris-6033": {
+      "folder": "77. Arca Brahma Koleksi Museum Nasional Indonesia Nomor Inventaris 6033",
+      "foto": []
+    },
+    "museum-taman-prasasti": {
+      "folder": "78. Museum Taman Prasasti  Jassenkerkhof (Museum Taman Prasasti)",
+      "foto": [
+        {
+          "asal": "Salinan Taman Prasasti_2.jpg",
+          "keterangan": "Area makam"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_4.jpg",
+          "keterangan": "Cungkup makam"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_15.jpg",
+          "keterangan": "Nisan berbentuk salib"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_19.jpg",
+          "keterangan": "Deretan nisan"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_28.jpg",
+          "keterangan": "Nisan berukir"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_29.jpg"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_33.jpg",
+          "keterangan": "Patung duka"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_34.jpg"
+        },
+        {
+          "asal": "Salinan Taman Prasasti_5.jpg",
+          "keterangan": "Kereta jenazah"
+        }
+      ]
+    },
+    "bank-tabungan-negara-harmoni": {
+      "folder": "79. Bank Tabungan Negara Harmoni  Postpaarbank (Menara BTN)",
+      "foto": []
+    },
+    "prasasti-dan-pintu-air-manggarai": {
+      "folder": "80. Prasasti dan Pintu Air Manggarai",
+      "foto": []
+    },
+    "rumah-kediaman-moh-hatta": {
+      "folder": "81. Rumah Kediaman Moh. Hatta",
+      "foto": []
+    },
+    "museum-perumusan-naskah-proklamasi": {
+      "folder": "82. Museum Perumusan Naskah Proklamasi",
+      "foto": [
+        {
+          "asal": "Salinan Munasprok1.jpg",
+          "keterangan": "Tampak depan museum"
+        },
+        {
+          "asal": "Salinan Munasprok2.jpg",
+          "keterangan": "Museum dari samping"
+        },
+        {
+          "asal": "Salinan Munasprok12.jpg",
+          "keterangan": "Ruang perumusan naskah"
+        },
+        {
+          "asal": "Salinan Munasprok6.jpg",
+          "keterangan": "Diorama pengetikan naskah"
+        },
+        {
+          "asal": "Salinan Munasprok9.jpg",
+          "keterangan": "Patung tokoh perumus"
+        },
+        {
+          "asal": "Salinan Munasprok7.jpg",
+          "keterangan": "Tangga"
+        }
+      ]
+    },
+    "gedung-kediaman-jenderal-m-t-haryono": {
+      "folder": "83. Gedung Kediaman Alm. Mayjen  M.T. Haryono",
+      "foto": [
+        {
+          "asal": "Salinan 20261013_114709.jpg",
+          "keterangan": "Ruang makan"
+        },
+        {
+          "asal": "Salinan 20261013_114808.jpg",
+          "keterangan": "Ruang tamu"
+        },
+        {
+          "asal": "Salinan 20261013_114734.jpg",
+          "keterangan": "Kamar tidur"
+        },
+        {
+          "asal": "Salinan 20261013_114816.jpg",
+          "keterangan": "Ruang kerja"
+        },
+        {
+          "asal": "Salinan DSCF0543.JPG"
+        },
+        {
+          "asal": "Salinan DSCF0548.JPG",
+          "keterangan": "Lemari pajangan"
+        }
+      ]
+    },
+    "gedung-kediaman-alm-mayor-jenderal-s-parman": {
+      "folder": "84. Gedung Kediaman Alm. Mayjen S. Parman",
+      "foto": []
+    },
+    "gedung-kediaman-alm-brigjen-sutoyo": {
+      "folder": "85. Gedung Kediaman Alm. Brigjen Sutoyo",
+      "foto": []
+    },
+    "hotel-indonesia": {
+      "folder": "86. Hotel Indonesia",
+      "foto": []
+    },
+    "bank-indonesia": {
+      "folder": "87. Bank Indonesia",
+      "foto": []
+    },
+    "gedung-kediaman-alm-letnan-jenderal-suprapto": {
+      "folder": "88. Gedung Kediaman Alm. Letnan Suprapto",
+      "foto": []
+    },
+    "museum-sasmita-loka-ahmad-yani": {
+      "folder": "89. Museum Sasmita Pahlawan Revolusi Jenderal A. Yani",
+      "foto": [
+        {
+          "asal": "Salinan DSCF0523.JPG",
+          "keterangan": "Patung Jenderal Ahmad Yani"
+        },
+        {
+          "asal": "Salinan DSCF0516.JPG",
+          "keterangan": "Selasar dalam"
+        },
+        {
+          "asal": "Salinan museum ahmad yani.JPG",
+          "keterangan": "Lorong pameran"
+        },
+        {
+          "asal": "Salinan DSCF0477.JPG",
+          "keterangan": "Lorong"
+        },
+        {
+          "asal": "Salinan DSCF0503.JPG",
+          "keterangan": "Plakat penetapan cagar budaya"
+        }
+      ]
+    },
+    "museum-joang-45": {
+      "folder": "90. Museum Joang 1945",
+      "foto": [
+        {
+          "asal": "Salinan Joang-15.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan Joang-09.jpg"
+        },
+        {
+          "asal": "Salinan Joang-02.jpg",
+          "keterangan": "Gedung dari jalan"
+        },
+        {
+          "asal": "Salinan Joang-19.jpg",
+          "keterangan": "Selasar samping"
+        },
+        {
+          "asal": "Salinan Joang-22.jpg",
+          "keterangan": "Paviliun"
+        },
+        {
+          "asal": "Salinan Joang-17.jpg",
+          "keterangan": "Relief perjuangan"
+        },
+        {
+          "asal": "Salinan Joang-45.jpg",
+          "keterangan": "Ruang pamer"
+        }
+      ]
+    },
+    "gedung-utama-badan-perencanaan-pembangunan-nasional": {
+      "folder": "91. Gedung Utama Kementerian Perencanaan Pembangunan Nasional Badan Perencanaan Pembangunan Nasional",
+      "foto": []
+    },
+    "bunderan-hotel-indonesia": {
+      "folder": "92. Bunderan Hotel Indonesia",
+      "foto": []
+    },
+    "gpib-paulus": {
+      "folder": "93. GPIB Paulus",
+      "foto": []
+    },
+    "masjid-al-makmur": {
+      "folder": "94. Masjid Al-Makmur",
+      "foto": []
+    },
+    "rumah-sakit-pgi-cikini": {
+      "folder": "95. Rumah Sakit PGI (Persekutuan Gereja Indonesia) Cikini",
+      "foto": []
+    },
+    "gedung-smpn-1-cikini": {
+      "folder": "96. SMPN 1 Jakarta",
+      "foto": []
+    },
+    "bioskop-metropole-xxi": {
+      "folder": "97. Metropole XXI",
+      "foto": [
+        {
+          "asal": "Salinan Metropol.jpg",
+          "keterangan": "Tampak depan bioskop"
+        },
+        {
+          "asal": "Salinan Metropol2.jpg",
+          "keterangan": "Menara"
+        },
+        {
+          "asal": "Salinan Metropol3.jpg",
+          "keterangan": "Pintu masuk"
+        },
+        {
+          "asal": "Salinan Metropol4.jpg",
+          "keterangan": "Teras depan"
+        }
+      ]
+    },
+    "gedung-laboratorium-mikrobiologi-universitas-indonesia": {
+      "folder": "98. Gedung FK-UI Laboratorium Mikrobiologi",
+      "foto": []
+    },
+    "rumah-sakit-persekutuan-gereja-gereja-di-indonesia-cikini": {
+      "folder": "99. Rumah Sakit Persekutuan Gereja-Gereja di Indonesia Cikini",
+      "foto": []
+    },
+    "kapel-rumah-sakit-perekutuan-gereja-gereja-di-indonesia-cikini": {
+      "folder": "100. Kapel Rumah Sakit PGI Cikini",
+      "foto": []
+    },
+    "asrama-wanita-iwki": {
+      "folder": "101. Gedung disamping Panti Trisula Perwari",
+      "foto": [
+        {
+          "asal": "Salinan IMG_1325.JPG",
+          "keterangan": "Tampak depan asrama"
+        },
+        {
+          "asal": "Salinan IMG_1331.JPG",
+          "keterangan": "Dinding samping"
+        },
+        {
+          "asal": "Salinan IMG_1327.JPG",
+          "keterangan": "Ruang dalam"
+        }
+      ]
+    },
+    "mobil-rep-1": {
+      "folder": "102. Mobil REP-1",
+      "foto": []
+    },
+    "gereja-anglikan-indonesia": {
+      "folder": "103. Gereja Anglikan Indonesia",
+      "foto": []
+    },
+    "masjid-cut-mutia": {
+      "folder": "104. Masjid Cut Mutia",
+      "foto": [
+        {
+          "asal": "Salinan CUTMUTIA_19.jpg",
+          "keterangan": "Tampak depan masjid"
+        },
+        {
+          "asal": "Salinan CUTMUTIA_15.jpg",
+          "keterangan": "Masjid dari udara"
+        },
+        {
+          "asal": "Salinan CUTMUTIA_21.jpg",
+          "keterangan": "Atap dari atas"
+        },
+        {
+          "asal": "Salinan CUTMUTIA_7.jpg",
+          "keterangan": "Ruang salat"
+        },
+        {
+          "asal": "Salinan CUTMUTIA_2.jpg",
+          "keterangan": "Mihrab"
+        },
+        {
+          "asal": "Salinan CUTMUTIA_4.jpg",
+          "keterangan": "Lantai atas"
+        }
+      ]
+    },
+    "gedung-kantor-imigrasi": {
+      "folder": "105. Galeri Seni Kunstkring",
+      "foto": []
+    },
+    "gedung-bank-indonesia-kebon-sirih": {
+      "folder": "106. Bank Indonesia",
+      "foto": []
+    },
+    "gedung-eks-kedutaan-besar-inggris": {
+      "folder": "107. Gedung Eks Kedutaan Besar Inggris",
+      "foto": []
+    },
+    "gereja-katolik-santa-theresia": {
+      "folder": "108. Gereja Katolik Santa Theresia",
+      "foto": []
+    },
+    "gedung-pancasila-departemen-luar-negeri": {
+      "folder": "109. Kementerian Luar Negeri RI",
+      "foto": []
+    },
+    "gedung-bp7": {
+      "folder": "110. Gedung BP7 (Gedung Garuda – Kementerian Luar Negeri)",
+      "foto": []
+    },
+    "museum-kebangkitan-nasional": {
+      "folder": "111. Museum Kebangkitan Nasional",
+      "foto": [
+        {
+          "asal": "Salinan muskitnas_12.jpg",
+          "keterangan": "Tampak gedung dari halaman"
+        },
+        {
+          "asal": "Salinan muskitnas_6.jpg",
+          "keterangan": "Kompleks gedung dari udara"
+        },
+        {
+          "asal": "Salinan muskitnas_9.jpg"
+        },
+        {
+          "asal": "Salinan muskitnas_11.jpg",
+          "keterangan": "Bangunan sayap"
+        },
+        {
+          "asal": "Salinan muskitnas_13.jpg",
+          "keterangan": "Selasar beratap"
+        },
+        {
+          "asal": "Salinan muskitnas_36.jpg",
+          "keterangan": "Selasar"
+        },
+        {
+          "asal": "Salinan muskitnas_47.jpg"
+        },
+        {
+          "asal": "Salinan muskitnas_30.jpg",
+          "keterangan": "Diorama ruang kelas"
+        },
+        {
+          "asal": "Salinan muskitnas_43.jpg",
+          "keterangan": "Ruang pamer"
+        },
+        {
+          "asal": "Salinan muskitnas_16.jpg",
+          "keterangan": "Ruang patung tokoh"
+        }
+      ]
+    },
+    "masjid-jami-atta-ibin": {
+      "folder": "112. Masjid Attaibin",
+      "foto": []
+    },
+    "gedung-departemen-keuangan-kantor-badan-urusan-piutang-negara": {
+      "folder": "113. Gedung Departemen KeuanganKantor Badan Urusan Piutang Negara",
+      "foto": []
+    },
+    "stasiun-kereta-api-pasar-senen": {
+      "folder": "114. Stasiun Kereta Api Pasar Senen",
+      "foto": []
+    },
+    "eks-gedung-jaya-gas": {
+      "folder": "115. Eks. Gedung Jaya Gas",
+      "foto": []
+    },
+    "bangunan-sekolah-dasar-senen-03-pagi": {
+      "folder": "116. Bangunan Sekolah Dasar Senen 03 Pagi",
+      "foto": []
+    },
+    "gereja-kristen-indonesia": {
+      "folder": "117. Gereja Kristen Indonesia Kwitang",
+      "foto": []
+    },
+    "gedung-utama-detasemen-a-pelopor-brigadir-mobil-kwitang": {
+      "folder": "118. Gedung Utama Detasemen A Pelopor Brigadir Mobil Kwitang",
+      "foto": []
+    },
+    "gedung-fakultas-kedokteran-universitas-indonesia": {
+      "folder": "119. Fakultas Kedokteran UI",
+      "foto": [
+        {
+          "asal": "Salinan DSCF1168.JPG",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan DSCF1169.JPG",
+          "keterangan": "Gedung dari halaman"
+        },
+        {
+          "asal": "Salinan DSCF1170.JPG"
+        },
+        {
+          "asal": "Salinan DSCF1194.JPG",
+          "keterangan": "Lobi"
+        },
+        {
+          "asal": "Salinan DSCF1204.JPG",
+          "keterangan": "Selasar"
+        },
+        {
+          "asal": "Salinan DSCF1202.JPG",
+          "keterangan": "Jendela kaca patri"
+        }
+      ]
+    },
+    "gedung-m-h-thamrin-gedung-kenari": {
+      "folder": "120. Museum M.H. Thamrin",
+      "foto": [
+        {
+          "asal": "Salinan Thamrin_1.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan Thamrin_2.jpg",
+          "keterangan": "Gedung dari atas"
+        },
+        {
+          "asal": "Salinan Thamrin_3.jpg",
+          "keterangan": "Halaman dari udara"
+        },
+        {
+          "asal": "Salinan Thamrin_13.jpg",
+          "keterangan": "Ruang pamer"
+        }
+      ]
+    },
+    "rumah-sakit-umum-pusat-cipto-mangunkusumo": {
+      "folder": "121. RSUP Nasional DR Cipto Mangunkusumo",
+      "foto": [
+        {
+          "asal": "Salinan DSCF1165.JPG",
+          "keterangan": "Tampak depan rumah sakit"
+        },
+        {
+          "asal": "Salinan DSCF1241.JPG",
+          "keterangan": "Rumah sakit dari jalan"
+        },
+        {
+          "asal": "Salinan DSCF1243.JPG",
+          "keterangan": "Sayap gedung"
+        },
+        {
+          "asal": "Salinan DSCF1163.JPG",
+          "keterangan": "Lorong masuk"
+        },
+        {
+          "asal": "Salinan DSCF1164.JPG",
+          "keterangan": "Lorong"
+        }
+      ]
+    },
+    "lembaga-biologi-molekuler-eijkman": {
+      "folder": "122. Pusat Riset Biologi Molekuler Eijkman",
+      "foto": [
+        {
+          "asal": "Salinan Eijkman1.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan Eijkman5.jpg",
+          "keterangan": "Pintu masuk Gedung Eijkman"
+        },
+        {
+          "asal": "Salinan Eijkman2.jpg"
+        },
+        {
+          "asal": "Salinan Eijkman3.jpg",
+          "keterangan": "Detail atap"
+        },
+        {
+          "asal": "Salinan Eijkman4.jpg",
+          "keterangan": "Papan nama"
+        },
+        {
+          "asal": "DSCF1088.JPG",
+          "keterangan": "Selasar"
+        },
+        {
+          "asal": "DSCF1110.JPG"
+        }
+      ]
+    },
+    "museum-sumpah-pemuda": {
+      "folder": "123. Museum Sumpah Pemuda",
+      "foto": [
+        {
+          "asal": "Salinan Muspada 24.jpg",
+          "keterangan": "Tampak depan museum"
+        },
+        {
+          "asal": "Salinan Muspada1.jpg",
+          "keterangan": "Teras samping"
+        },
+        {
+          "asal": "Salinan Muspada23.jpg",
+          "keterangan": "Ruang pamer"
+        },
+        {
+          "asal": "Salinan Muspada18.jpg",
+          "keterangan": "Diorama"
+        },
+        {
+          "asal": "Salinan Muspada16.jpg",
+          "keterangan": "Mural tokoh pemuda"
+        },
+        {
+          "asal": "Salinan Muspada7.jpg",
+          "keterangan": "Patung dada tokoh"
+        },
+        {
+          "asal": "Salinan Muspada11.jpg",
+          "keterangan": "Gramofon"
+        }
+      ]
+    },
+    "rumah-piatu-muslimin": {
+      "folder": "124. Rumah Piatu Muslimin",
+      "foto": []
+    },
+    "masjid-istiqlal": {
+      "folder": "125. Masjid Istiqlal",
+      "foto": [
+        {
+          "asal": "Salinan Istiqlal17.jpg",
+          "keterangan": "Tampak masjid dari pelataran"
+        },
+        {
+          "asal": "Salinan Istiqlal.jpg",
+          "keterangan": "Masjid dari udara"
+        },
+        {
+          "asal": "Salinan Istiqlal15.jpg",
+          "keterangan": "Kubah utama"
+        },
+        {
+          "asal": "Salinan IMG_1377.JPG",
+          "keterangan": "Ruang salat utama"
+        },
+        {
+          "asal": "Salinan IMG_1378.JPG"
+        },
+        {
+          "asal": "Salinan IMG_1372.JPG",
+          "keterangan": "Kubah dari dalam"
+        },
+        {
+          "asal": "Salinan IMG_1401.JPG",
+          "keterangan": "Selasar"
+        },
+        {
+          "asal": "Salinan IMG_1408.JPG"
+        },
+        {
+          "asal": "Salinan IMG_1414.JPG"
+        },
+        {
+          "asal": "Salinan Istiqlal12.jpg",
+          "keterangan": "Taman tepi sungai"
+        }
+      ]
+    },
+    "gedung-smk-i-budi-utomo": {
+      "folder": "126. SMKN 1 Jakarta",
+      "foto": []
+    },
+    "gedung-sma-i-budi-utomo": {
+      "folder": "127. SMAN 1 Jakarta)",
+      "foto": []
+    },
+    "gedung-smkk-negeri-jakarta": {
+      "folder": "128. SMK Negeri 27 Jakarta",
+      "foto": []
+    },
+    "gedung-ex-mahkamah-agung-gedung-jusuf-anwar": {
+      "folder": "129. Gedung Jusuf Anwar, Direktorat Jenderal Perbendaharaan Keuangan Negara",
+      "foto": []
+    },
+    "bangunan-di-jalan-antara-no-25": {
+      "folder": "130. Bangunan di Jalan Antara No 25",
+      "foto": []
+    },
+    "bangunan-di-jalan-antara-no-27": {
+      "folder": "131. Bangunan di Jalan Antara No 27",
+      "foto": []
+    },
+    "bangunan-di-jalan-antara-no-29": {
+      "folder": "132. Bangunan di Jalan Antara No.29 (Shantung Restoran)",
+      "foto": []
+    },
+    "bangunan-di-jalan-antara-no-51": {
+      "folder": "133. Bangunan di Jalan Antara No.51 (Kantor PT Mitra Prestasi Prima)",
+      "foto": []
+    },
+    "bangunan-di-jalan-antara-no-53": {
+      "folder": "134. Bangunan di Jalan Antara No.53 (Kantor Antara News)",
+      "foto": []
+    },
+    "bangunan-di-jalan-antara-no-55": {
+      "folder": "135. Bangunan di Jalan Antara No.55 (Antara Heritage)",
+      "foto": []
+    },
+    "gereja-pniel": {
+      "folder": "136. Gereja PNIEL (Gereja Ayam) (GPIB PNIEL)",
+      "foto": [
+        {
+          "asal": "Salinan PNIEL_1.jpg",
+          "keterangan": "Tampak depan gereja"
+        },
+        {
+          "asal": "Salinan PNIEL_9.jpg",
+          "keterangan": "Ruang ibadah"
+        },
+        {
+          "asal": "Salinan PNIEL_30.jpg",
+          "keterangan": "Mimbar"
+        },
+        {
+          "asal": "Salinan PNIEL_27.jpg",
+          "keterangan": "Jendela kaca patri"
+        }
+      ]
+    },
+    "kementerian-keuangan": {
+      "folder": "137. Gedung Kementerian Keuangan RI",
+      "foto": []
+    },
+    "bangunan-di-jalan-pasar-baru-no-2": {
+      "folder": "138. Bangunan di Jalan Pasar Baru No.2 (Toko Garuda Sports & Music)",
+      "foto": []
+    },
+    "bangunan-di-jalan-pasar-baru-no-8": {
+      "folder": "139. Bangunan di Jalan Pasar Baru No.8 (Toko Textile Surya Jaya)",
+      "foto": []
+    },
+    "bangunan-di-jalan-pasar-baru-no-30": {
+      "folder": "140. Bangunan di Jalan Pasar Baru No.30 (Rumah Makan Pasar Baru No.30)",
+      "foto": []
+    },
+    "bangunan-di-jalan-pasar-baru-no-46": {
+      "folder": "141. Bangunan di Jalan Pasar Baru No.46 (Rumah Makan Pasar Baru No.46)",
+      "foto": []
+    },
+    "gereja-katedral": {
+      "folder": "142. Gereja Katedral",
+      "foto": [
+        {
+          "asal": "Salinan Kathedral1.JPG",
+          "keterangan": "Tampak depan gereja"
+        },
+        {
+          "asal": "Salinan MBB07980.jpg",
+          "keterangan": "Altar"
+        },
+        {
+          "asal": "Salinan Kathedral4.jpg",
+          "keterangan": "Ruang ibadah"
+        },
+        {
+          "asal": "Salinan Kathedral3.jpg",
+          "keterangan": "Pilar dan lengkung"
+        },
+        {
+          "asal": "Salinan Kathedral5.jpg"
+        },
+        {
+          "asal": "Salinan Kathedral6.jpg"
+        },
+        {
+          "asal": "Salinan Kathedral2.jpg",
+          "keterangan": "Langit-langit kayu"
+        }
+      ]
+    },
+    "kantor-berita-antara": {
+      "folder": "143. Biro Antara Foto",
+      "foto": [
+        {
+          "asal": "Salinan Gedung Antara1.jpg",
+          "keterangan": "Gedung pada malam hari"
+        },
+        {
+          "asal": "Salinan Gedung Antara2.jpg"
+        }
+      ]
+    },
+    "gedung-kesenian-jakarta": {
+      "folder": "144. Gedung Kesenian Jakarta",
+      "foto": [
+        {
+          "asal": "Salinan GKJ_7.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan GKJ_3.jpg",
+          "keterangan": "Gedung dari udara"
+        },
+        {
+          "asal": "Salinan GKJ_2.jpg"
+        },
+        {
+          "asal": "Salinan GKJ_17.jpg",
+          "keterangan": "Panggung"
+        },
+        {
+          "asal": "Salinan GKJ_18.jpg",
+          "keterangan": "Ruang pertunjukan"
+        },
+        {
+          "asal": "Salinan GKJ_11.jpg",
+          "keterangan": "Balkon"
+        }
+      ]
+    },
+    "kantor-pos-pasar-baru": {
+      "folder": "145. Pos Bloc Jakarta",
+      "foto": []
+    },
+    "toko-kompak": {
+      "folder": "146. Toko Kompak",
+      "foto": []
+    },
+    "sin-tek-bio": {
+      "folder": "147. Sin Tek Bio",
+      "foto": [
+        {
+          "asal": "Salinan Sintekbio_1.jpg",
+          "keterangan": "Pintu masuk kelenteng"
+        },
+        {
+          "asal": "Salinan Sintekbio_10.jpg",
+          "keterangan": "Altar"
+        },
+        {
+          "asal": "Salinan Sintekbio_14.jpg",
+          "keterangan": "Pagoda pembakaran kertas"
+        },
+        {
+          "asal": "Salinan Sintekbio_16.jpg",
+          "keterangan": "Patung singa batu"
+        },
+        {
+          "asal": "Salinan Sintekbio_36.jpg",
+          "keterangan": "Altar dewa"
+        }
+      ]
+    },
+    "eks-toko-tio-tek-hong": {
+      "folder": "148. Eks Toko Tio Tek Hong",
+      "foto": []
+    },
+    "ruas-jalan-pasar-baru": {
+      "folder": "149. Ruas Jalan Pasar Baru",
+      "foto": [
+        {
+          "asal": "Salinan Pasarbaru_3.jpg",
+          "keterangan": "Gerbang Pasar Baru"
+        },
+        {
+          "asal": "Salinan Pasarbaru_4.jpg",
+          "keterangan": "Detail gerbang bertahun 1820"
+        },
+        {
+          "asal": "Salinan DSCF8970.JPG",
+          "keterangan": "Gerbang dari dalam pasar"
+        },
+        {
+          "asal": "Salinan DSCF8971.JPG",
+          "keterangan": "Ruas jalan pasar"
+        },
+        {
+          "asal": "Salinan DSCF9001.JPG"
+        },
+        {
+          "asal": "Salinan DSCF9043.JPG",
+          "keterangan": "Jembatan di depan gerbang"
+        }
+      ]
+    },
+    "kanal-ciliwung-jalan-antara-dan-jalan-pasar-baru-selatan": {
+      "folder": "150. Kanal Ciliwung Jalan Antara dan Jalan Pasar Baru Selatan",
+      "foto": []
+    },
+    "kompleks-jalan-pasar-baru": {
+      "folder": "151. Kompleks Jalan Pasar Baru",
+      "foto": []
+    },
+    "makam-souw-beng-kong": {
+      "folder": "152. Makam Souw Beng Kong",
+      "foto": []
+    },
+    "pasar-petojo-enclek": {
+      "folder": "153. Pasar Petojo Enclek",
+      "foto": [
+        {
+          "asal": "Salinan Petojo_4.jpg",
+          "keterangan": "Tampak depan pasar"
+        },
+        {
+          "asal": "Salinan Petojo_5.jpg"
+        },
+        {
+          "asal": "Salinan Petojo_2.jpg",
+          "keterangan": "Atap pasar dari udara"
+        },
+        {
+          "asal": "Salinan Petojo_1.jpg"
+        },
+        {
+          "asal": "Salinan Petojo_3.jpg"
+        }
+      ]
+    },
+    "gedung-mpr-dpr": {
+      "folder": "154. Gedung MPR DPR",
+      "foto": [
+        {
+          "asal": "20261022_124105.jpg",
+          "keterangan": "Gedung Nusantara dan kolam"
+        },
+        {
+          "asal": "20261022_123709.jpg",
+          "keterangan": "Gedung Nusantara I"
+        },
+        {
+          "asal": "DSCF0757.JPG",
+          "keterangan": "Patung Soekarno di halaman"
+        },
+        {
+          "asal": "DSCF0758.JPG",
+          "keterangan": "Taman depan"
+        },
+        {
+          "asal": "DSCF0774.JPG"
+        },
+        {
+          "asal": "DSCF0882.JPG"
+        }
+      ]
+    },
+    "stadion-utama-gelora-bung-karno": {
+      "folder": "155. Stadion Utama Gelora Bung Karno",
+      "foto": []
+    },
+    "stadion-aquatik": {
+      "folder": "156. Stadion Aquatik",
+      "foto": []
+    },
+    "stadion-tennis-outdoor": {
+      "folder": "157. Tennis Center Court Gelora Bung Karno",
+      "foto": []
+    },
+    "stadion-madya": {
+      "folder": "158. Stadion Madya",
+      "foto": []
+    },
+    "stadion-basket": {
+      "folder": "159. GBK Basket Hall",
+      "foto": []
+    },
+    "istora-senayan": {
+      "folder": "160. Istora Senayan",
+      "foto": []
+    },
+    "patung-panahan": {
+      "folder": "161. Patung Panahan",
+      "foto": []
+    },
+    "gedung-nusantara": {
+      "folder": "162. Gedung Nusantara",
+      "foto": [
+        {
+          "asal": "DSCF0760.JPG",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "DSCF0757.JPG",
+          "keterangan": "Gedung dari halaman"
+        },
+        {
+          "asal": "DSCF0817.JPG",
+          "keterangan": "Lobi"
+        },
+        {
+          "asal": "DSCF0844.JPG",
+          "keterangan": "Ruang sidang"
+        },
+        {
+          "asal": "DSCF0851.JPG",
+          "keterangan": "Mimbar ruang sidang"
+        },
+        {
+          "asal": "DSCF0781.JPG",
+          "keterangan": "Tangga"
+        }
+      ]
+    },
+    "kompleks-gelanggang-olahraga-senayan": {
+      "folder": "163. Jalan Silang Gelora Bung Karno",
+      "foto": []
+    },
+    "kompleks-halaman-gedung-proklamasi": {
+      "folder": "164. Taman Proklamator",
+      "foto": []
+    },
+    "gedung-perintis-kemerdekaan": {
+      "folder": "165. Gedung Perintis Kemerdekaan Bakamla RI)",
+      "foto": []
+    },
+    "situs-taman-proklamasi": {
+      "folder": "166. Situs Taman Proklamasi",
+      "foto": [
+        {
+          "asal": "Salinan Tamprok10.jpg",
+          "keterangan": "Tugu peringatan"
+        },
+        {
+          "asal": "Salinan Tamprok1.jpg",
+          "keterangan": "Pelataran taman"
+        },
+        {
+          "asal": "Salinan Tamprok11.jpg"
+        },
+        {
+          "asal": "Salinan Tamprok5.jpg"
+        },
+        {
+          "asal": "Salinan Tamprok14.jpg"
+        },
+        {
+          "asal": "Salinan Tamprok8.jpg",
+          "keterangan": "Taman"
+        }
+      ]
+    },
+    "tugu-proklamasi": {
+      "folder": "167. Tugu Proklamasi",
+      "foto": [
+        {
+          "asal": "Salinan Tugu Proklamasi3.jpg",
+          "keterangan": "Patung Soekarno dan Hatta"
+        },
+        {
+          "asal": "Salinan Tugu Proklamasi10.jpg"
+        },
+        {
+          "asal": "Salinan Tugu Proklamasi1.jpg",
+          "keterangan": "Dinding monumen"
+        },
+        {
+          "asal": "Salinan Tugu Proklamasi8.jpg",
+          "keterangan": "Prasasti naskah proklamasi"
+        },
+        {
+          "asal": "Salinan Tugu Proklamasi7.jpg",
+          "keterangan": "Detail dinding"
+        }
+      ]
+    },
+    "tugu-peringatan-proklamasi": {
+      "folder": "168. Tugu Peringatan Proklamasi",
+      "foto": []
+    },
+    "rumah-proklamasi": {
+      "folder": "169. Rumah Proklamasi",
+      "foto": []
+    },
+    "gedung-eks-terminal-bandara-kemayoran": {
+      "folder": "170. Eks Terminal Bandara Kemayoran",
+      "foto": []
+    },
+    "mausoleum-o-g-khouw": {
+      "folder": "171. Mausoleum O.G. Khouw",
+      "foto": [
+        {
+          "asal": "DSCF0917.JPG",
+          "keterangan": "Mausoleum di tengah kompleks makam"
+        },
+        {
+          "asal": "DSCF0971.JPG",
+          "keterangan": "Kubah mausoleum"
+        },
+        {
+          "asal": "DSCF0967.JPG",
+          "keterangan": "Bagian dalam mausoleum"
+        },
+        {
+          "asal": "DSCF0918.JPG",
+          "keterangan": "Pintu gerbang"
+        },
+        {
+          "asal": "DSCF0940.JPG",
+          "keterangan": "Pintu masuk ruang bawah"
+        },
+        {
+          "asal": "DSCF0949.JPG",
+          "keterangan": "Patung malaikat"
+        },
+        {
+          "asal": "DSCF0956.JPG",
+          "keterangan": "Nisan"
+        },
+        {
+          "asal": "DSCF0960.JPG"
+        }
+      ]
+    },
+    "makam-mohammad-hoesni-thamrin": {
+      "folder": "172. Makam Mohammad Hoesni Thamrin",
+      "foto": [
+        {
+          "asal": "DSCF0895.JPG",
+          "keterangan": "Makam Mohammad Hoesni Thamrin"
+        },
+        {
+          "asal": "DSCF0897.JPG",
+          "keterangan": "Nisan"
+        }
+      ]
+    },
+    "patung-chairil-anwar-di-perguruan-taman-siswa-cabang-jakarta": {
+      "folder": "173. Patung Chairil Anwar di Perguruan Taman Siswa Cabang Jakarta",
+      "foto": []
+    },
+    "gedung-sarinah": {
+      "folder": "174 Gedung Sarinah",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-timur": {
+      "folder": "175. Gedung PT. Eskaha",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-timur-gedung-no-2": {
+      "folder": "176. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.2",
+      "foto": []
+    },
+    "gedung-perkumpulan-maha-bodhi": {
+      "folder": "177. Gedung Perkumpulan Maha Bodhi",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-timur-bangunan-no-4": {
+      "folder": "178. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.4",
+      "foto": []
+    },
+    "kantor-pusat-pt-banda-graha-reksa-no-5-7": {
+      "folder": "179. Kantor Pusat PT. Banda Graha Reksa No.5-7)",
+      "foto": []
+    },
+    "gedung-kerta-niaga": {
+      "folder": "180. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.8 Gedung Kerta Niaga",
+      "foto": []
+    },
+    "gedung-kerta-niaga-no-9": {
+      "folder": "181. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.9 Gedung Kerta Niaga",
+      "foto": []
+    },
+    "pt-asuransi-jasa-raharja": {
+      "folder": "182. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.10 PT. Asuransi Jasa Raharja",
+      "foto": []
+    },
+    "kantor-pelayanan-bahtera-adhiguna-nederlandeindischesteinkolenhandels": {
+      "folder": "183. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.11 PT. Asuransi Jasa Raharja",
+      "foto": []
+    },
+    "gedung-arsip-bank-mandiri": {
+      "folder": "184. Gedung Arsip Bank Mandiri",
+      "foto": []
+    },
+    "museum-wayang": {
+      "folder": "185. Bagian Belakang Museum Wayang",
+      "foto": []
+    },
+    "kantor-pt-sadar": {
+      "folder": "186. Kantor PT Sadar",
+      "foto": []
+    },
+    "kantor-law-office-h-djohan-djauhari": {
+      "folder": "187. Kantor Law Office H. Djohan Djauhari",
+      "foto": []
+    },
+    "bangunan-pt-vico-indo": {
+      "folder": "188. Bangunan PT. Vico Indo",
+      "foto": []
+    },
+    "tanah-sisa-bangunan-dunloop-dan-kolff": {
+      "folder": "189. Bangunan Dunloop & Kolff",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-timur-bangunan-no-27": {
+      "folder": "190. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.27",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-timur-bangunan-no-28": {
+      "folder": "191. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.28",
+      "foto": []
+    },
+    "gudang-pt-jasa-raharja": {
+      "folder": "192. Gudang PT. Jasa Raharja",
+      "foto": []
+    },
+    "bangunan-eks-bank-dagang-negara": {
+      "folder": "193. Bangunan Eks Bank Dagang Negara Indonesia",
+      "foto": []
+    },
+    "bangunan-tunas-dipta-persada-jl-kalibesar-timur-no-31": {
+      "folder": "194. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Timur No.31",
+      "foto": []
+    },
+    "bangunan-ruko-jl-kali-besar-timur-no-28": {
+      "folder": "195. Bangunan Ruko Jl. Kali Besar Timur No.28",
+      "foto": []
+    },
+    "gedung-tjipta-niaga": {
+      "folder": "196. Gedung Tjiptaniaga",
+      "foto": [
+        {
+          "asal": "Salinan Cipta Niaga_22.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan Cipta Niaga.jpg",
+          "keterangan": "Gedung dari udara"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_4.jpg",
+          "keterangan": "Menara kembar"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_5.jpg"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_20.jpg",
+          "keterangan": "Sisi gedung"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_21.jpg",
+          "keterangan": "Pintu samping"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_18.jpg"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_7.jpg",
+          "keterangan": "Selasar"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_15.jpg",
+          "keterangan": "Tangga"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_10.jpg",
+          "keterangan": "Ruang dalam"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_13.jpg"
+        },
+        {
+          "asal": "Salinan Cipta Niaga_2.jpg",
+          "keterangan": "Atap dari atas"
+        }
+      ],
+      "abaikan": [
+        "Salinan Cipta Niaga_1.jpg",
+        "Salinan Cipta Niaga_11.jpg",
+        "Salinan Cipta Niaga_12.jpg",
+        "Salinan Cipta Niaga_14.jpg",
+        "Salinan Cipta Niaga_16.jpg",
+        "Salinan Cipta Niaga_17.jpg",
+        "Salinan Cipta Niaga_19.jpg",
+        "Salinan Cipta Niaga_6.jpg",
+        "Salinan Cipta Niaga_8.jpg",
+        "Salinan Cipta Niaga_9.jpg"
+      ]
+    },
+    "gedung-jasindo-taman-fatahillah": {
+      "folder": "197. Gedung Jasindo Taman Fatahillah",
+      "foto": [
+        {
+          "asal": "Salinan Jasindo_1..jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan Jasindo_4.jpg",
+          "keterangan": "Gedung dari pelataran"
+        },
+        {
+          "asal": "Salinan Jasindo_5.jpg",
+          "keterangan": "Pintu masuk"
+        },
+        {
+          "asal": "Salinan Jasindo_6.jpg",
+          "keterangan": "Detail atap"
+        },
+        {
+          "asal": "Salinan Jasindo_2..jpg",
+          "keterangan": "Gedung dari udara"
+        },
+        {
+          "asal": "Salinan Jasindo_3.jpg",
+          "keterangan": "Atap dari atas"
+        }
+      ]
+    },
+    "bank-mandiri-eks-bank-dagang-negara": {
+      "folder": "198. Kantor Bank Mandiri Regional III",
+      "foto": []
+    },
+    "museum-bank-indonesia": {
+      "folder": "199. Museum Bank Indonesia",
+      "foto": [
+        {
+          "asal": "Salinan Museum BI_3.jpg",
+          "keterangan": "Tampak depan museum"
+        },
+        {
+          "asal": "Salinan DSC04223.jpg",
+          "keterangan": "Gedung dari jalan"
+        },
+        {
+          "asal": "Salinan DSC04233.jpg"
+        },
+        {
+          "asal": "Salinan DSC02884.jpg",
+          "keterangan": "Detail fasad"
+        },
+        {
+          "asal": "Salinan Museum BI_4.jpg",
+          "keterangan": "Kompleks dari udara"
+        },
+        {
+          "asal": "Salinan Museum BI_1.jpg"
+        },
+        {
+          "asal": "Salinan Museum BI_2.jpg",
+          "keterangan": "Denah gedung dari atas"
+        },
+        {
+          "asal": "Salinan Museum Bank Indonesia3.jpeg",
+          "keterangan": "Ruang dalam"
+        }
+      ]
+    },
+    "bank-mandiri-jakarta-kota": {
+      "folder": "200. Bank Mandiri Jakarta Kota",
+      "foto": []
+    },
+    "museum-sejarah-jakarta": {
+      "folder": "201. Museum Sejarah Jakarta",
+      "foto": [
+        {
+          "asal": "Salinan MSJ1.jpg",
+          "keterangan": "Tampak depan museum"
+        },
+        {
+          "asal": "Salinan MSJ43.jpg",
+          "keterangan": "Museum dari Taman Fatahillah"
+        },
+        {
+          "asal": "Salinan MSJ42.jpg",
+          "keterangan": "Menara lonceng"
+        },
+        {
+          "asal": "Salinan MSJ35.jpg",
+          "keterangan": "Sisi gedung"
+        },
+        {
+          "asal": "Salinan MSJ37.jpg",
+          "keterangan": "Ruang pamer"
+        },
+        {
+          "asal": "Salinan MSJ16.jpg",
+          "keterangan": "Tangga kayu"
+        },
+        {
+          "asal": "Salinan MSJ29.jpg",
+          "keterangan": "Patung Hermes"
+        },
+        {
+          "asal": "Salinan MSJ8.jpg",
+          "keterangan": "Koleksi batu prasasti"
+        }
+      ]
+    },
+    "museum-seni-rupa-dan-keramik": {
+      "folder": "202. Museum Seni Rupa dan Keramik",
+      "foto": []
+    },
+    "gereja-sion": {
+      "folder": "203. Gereja Sion",
+      "foto": [
+        {
+          "asal": "Salinan IMG_9418.JPG",
+          "keterangan": "Tampak depan gereja"
+        },
+        {
+          "asal": "Salinan IMG_9419.JPG",
+          "keterangan": "Gereja dari samping"
+        },
+        {
+          "asal": "Salinan Gereja Sion24.jpg",
+          "keterangan": "Ruang ibadah"
+        },
+        {
+          "asal": "Salinan Gereja Sion4.jpg",
+          "keterangan": "Mimbar"
+        },
+        {
+          "asal": "Salinan Gereja Sion10.jpg",
+          "keterangan": "Orgel"
+        },
+        {
+          "asal": "Salinan Gereja Sion9.jpg"
+        }
+      ]
+    },
+    "stasiun-kereta-api-jakarta-kota": {
+      "folder": "204. Stasiun Kereta Api Jakarta Kota",
+      "foto": [
+        {
+          "asal": "Salinan Kota2.jpg",
+          "keterangan": "Tampak depan stasiun"
+        },
+        {
+          "asal": "Salinan Stasiun Kota1.jpg",
+          "keterangan": "Stasiun dari udara"
+        },
+        {
+          "asal": "Salinan Stasiun Kota2.jpg",
+          "keterangan": "Pelataran depan"
+        },
+        {
+          "asal": "Salinan KOTA1.jpg"
+        },
+        {
+          "asal": "Salinan KOTA2(1).jpg"
+        },
+        {
+          "asal": "Salinan Kota5.jpg",
+          "keterangan": "Pintu masuk"
+        },
+        {
+          "asal": "Salinan Kota6.jpg",
+          "keterangan": "Atap peron"
+        },
+        {
+          "asal": "Salinan Kota7.jpg",
+          "keterangan": "Peron"
+        }
+      ]
+    },
+    "museum-wayang-no-27": {
+      "folder": "205. Museum Wayang",
+      "foto": [
+        {
+          "asal": "Salinan Wayang2.jpg",
+          "keterangan": "Tampak depan museum"
+        },
+        {
+          "asal": "Salinan Wayang3.jpg"
+        },
+        {
+          "asal": "Salinan Museum Wayang30@1x_1-1.jpg",
+          "keterangan": "Ruang pamer"
+        },
+        {
+          "asal": "Salinan Museum Wayang40.jpg",
+          "keterangan": "Lorong prasasti"
+        },
+        {
+          "asal": "Salinan Museum Wayang37.jpg",
+          "keterangan": "Prasasti makam Jan Pieterszoon Coen"
+        }
+      ]
+    },
+    "gedung-arsip-bank-pasific": {
+      "folder": "206. Gedung Arsip Bank Pasific",
+      "foto": []
+    },
+    "lukisan-prambanan-seko-karya-s-sudjojono": {
+      "folder": "207. Koleksi Museum Seni Rupa dan keramik (Lukisan Prambanan Seko Karya S. Sudjojono)",
+      "foto": []
+    },
+    "lukisan-bupati-cianjur-karya-raden-saleh-sjarif-boestaman": {
+      "folder": "208. Koleksi Museum Seni Rupa dan keramik (Lukisan Bupati Cianjur Karya Raden Saleh Sjarif Boestaman)",
+      "foto": []
+    },
+    "lukisan-pengantin-revolusi-karya-hendra-gunawan": {
+      "folder": "209. Koleksi Museum Seni Rupa dan keramik (Lukisan Pengantin Revolusi karya Hendra Gunawan)",
+      "foto": []
+    },
+    "lukisan-dewi-karya-agus-djaya": {
+      "folder": "210. Koleksi Museum Seni Rupa dan Keramik (Lukisan Dewi karya Agus Djaya)",
+      "foto": []
+    },
+    "meriam-si-jagur": {
+      "folder": "211. Meriam Si Jagur",
+      "foto": []
+    },
+    "bangunan-jl-kalibesar-timur-no-24": {
+      "folder": "212. Bangunan Jl. Kalibesar Timur No.24",
+      "foto": []
+    },
+    "bangunan-ruko-no-28-a": {
+      "folder": "213. Bangunan Ruko Jl. Kalibesar Timur No.28 A",
+      "foto": []
+    },
+    "bangunan-ruko-no-28-b-c-d-e": {
+      "folder": "214. Bangunan Ruko Jl. Kalibesar Timur No.28 B, C, D, E",
+      "foto": []
+    },
+    "gudang-eks-milkmaid-milk-company-kantor-unit-pengelola-kawasan-kotatua": {
+      "folder": "215. Kantor Unit Pengelola Kawasan (UPK) Kota Tua",
+      "foto": []
+    },
+    "bangunan-di-sebelah-bangunan-tunas-dipta-persada": {
+      "folder": "216. Bangunan di sebelah Bangunan Tunas Dipta Persada",
+      "foto": []
+    },
+    "museum-bank-mandiri": {
+      "folder": "217. Museum Bank Mandiri",
+      "foto": [
+        {
+          "asal": "Salinan Museum Mandiri_3.jpg",
+          "keterangan": "Gedung dari udara"
+        },
+        {
+          "asal": "Salinan Mandiri25.jpg",
+          "keterangan": "Menara gedung"
+        },
+        {
+          "asal": "Salinan Mandiri50.jpg",
+          "keterangan": "Pintu masuk Factorij"
+        },
+        {
+          "asal": "Salinan Mandiri20.jpg",
+          "keterangan": "Halaman dalam"
+        },
+        {
+          "asal": "Salinan Mandiri21.jpg"
+        },
+        {
+          "asal": "Salinan Mandiri-58.jpg",
+          "keterangan": "Detail kisi-kisi fasad"
+        },
+        {
+          "asal": "Salinan Mandiri10.jpg",
+          "keterangan": "Ruang loket"
+        },
+        {
+          "asal": "Salinan Mandiri11.jpg",
+          "keterangan": "Ruang dalam"
+        },
+        {
+          "asal": "Salinan Mandiri2.jpg"
+        },
+        {
+          "asal": "Salinan Mandiri18.jpg",
+          "keterangan": "Selasar"
+        }
+      ]
+    },
+    "gedung-pt-jasindo": {
+      "folder": "218. Gedung PT Jasindo (Bangunan Jl. Kalibesar Timur No.23)",
+      "foto": []
+    },
+    "cafe-batavia": {
+      "folder": "219. Café Batavia",
+      "foto": []
+    },
+    "gedung-kantor-pusat-konservasi-cagar-budaya": {
+      "folder": "220. Gedung Kantor Pusat Konservasi Cagar Budaya",
+      "foto": []
+    },
+    "lukisan-tiga-putusan-pengadilan": {
+      "folder": "221. Lukisan Tiga Putusan Pengadilan",
+      "foto": []
+    },
+    "lukisan-pertempuran-sultan-agung-dn-j-p-coen-nomor-inventaris-msj-orb": {
+      "folder": "222. Lukisan Pertempuran Sultan Agung dan J.P. Coen Nomor Inventaris MSJ ORB LKS 0008",
+      "foto": []
+    },
+    "pedang-keadilan-nomor-koleksi-284-msj": {
+      "folder": "223. Pedang Keadilan Nomor Koleksi 284 MSJ",
+      "foto": []
+    },
+    "pedang-keadilan-nomor-koleksi-285-msj": {
+      "folder": "224. Pedang Keadilan Nomor Koleksi 285 MSJ",
+      "foto": []
+    },
+    "gereja-katholik-santa-maria-de-fatima": {
+      "folder": "225. Gereja Katholik Santa Maria De Fatima",
+      "foto": [
+        {
+          "asal": "Salinan W. St. Maria De Fatima3.jpg",
+          "keterangan": "Tampak depan gereja"
+        },
+        {
+          "asal": "Salinan W. St. Maria De Fatima4.jpg",
+          "keterangan": "Gereja dari halaman"
+        },
+        {
+          "asal": "Salinan W. St. Maria De Fatima5.jpg",
+          "keterangan": "Pintu masuk"
+        }
+      ]
+    },
+    "gedung-candranaya": {
+      "folder": "226. Gedung Candranaya",
+      "foto": []
+    },
+    "gedung-arsip-nasional": {
+      "folder": "227. Gedung Arsip Nasional",
+      "foto": [
+        {
+          "asal": "Salinan ANRI_12.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan ANRI_1.jpg",
+          "keterangan": "Gedung dari halaman"
+        },
+        {
+          "asal": "Salinan ANRI_11.jpg",
+          "keterangan": "Pintu masuk"
+        },
+        {
+          "asal": "Salinan ANRI_8.jpg",
+          "keterangan": "Kompleks dari udara"
+        },
+        {
+          "asal": "Salinan ANRI_9.jpg",
+          "keterangan": "Kompleks dari atas"
+        }
+      ]
+    },
+    "pantjoran-tea-house": {
+      "folder": "228. Pantjoran Tea House",
+      "foto": []
+    },
+    "masjid-jami-kebon-jeruk": {
+      "folder": "229. Masjid Jami Kebon Jeruk",
+      "foto": []
+    },
+    "masjid-jami-tambora": {
+      "folder": "230. Masjid Jami Tambora",
+      "foto": [
+        {
+          "asal": "Salinan Masjid Tambora6.jpg",
+          "keterangan": "Masjid di tengah permukiman"
+        },
+        {
+          "asal": "Salinan Masjid Jami Tambora4.jpg",
+          "keterangan": "Ruang salat"
+        },
+        {
+          "asal": "Salinan Masjid Jami Tambora5.jpg"
+        },
+        {
+          "asal": "Salinan Masjid Jami Tambora1.jpg",
+          "keterangan": "Serambi"
+        },
+        {
+          "asal": "Salinan Masjid Jami Tambora2.jpg",
+          "keterangan": "Bangunan makam"
+        }
+      ]
+    },
+    "bangunan-langgam-cina-jl-blandongan-rumah-no-16": {
+      "folder": "231. Bangunan Langgam Cina Jl. Blandongan (Bangunan Rumah No.16)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-blandongan-rumah-no-17": {
+      "folder": "232. Bangunan Langgam Cina Jl. Blandongan (Bangunan Rumah No.17)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-blandongan-rumah-no-18": {
+      "folder": "233. Bangunan Langgam Cina Jl. Blandongan (Bangunan Rumah No.18)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-blandongan-rumah-no-19": {
+      "folder": "234. Bangunan Langgam Cina Jl. Blandongan (Bangunan Rumah No.19)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-blandongan-rumah-no-20": {
+      "folder": "235. Bangunan Langgam Cina Jl. Blandongan (Bangunan Rumah No.20)",
+      "foto": []
+    },
+    "rumah-no-10-blandongan": {
+      "folder": "236. Rumah No.10 Blandongan",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-254": {
+      "folder": "237. Bangunan Rumah Toko No.254",
+      "foto": []
+    },
+    "masjid-jami-al-mansyur": {
+      "folder": "238. Masjid Jami Al-Mansyur (Masjid Sawah Lio)",
+      "foto": [
+        {
+          "asal": "Salinan Jami Al Mansur2.jpg",
+          "keterangan": "Masjid dan menara"
+        },
+        {
+          "asal": "Salinan Jami Al Mansur8.jpg"
+        },
+        {
+          "asal": "Salinan Jami Al Mansur16.jpg",
+          "keterangan": "Papan nama masjid"
+        },
+        {
+          "asal": "Salinan Jami Al Mansur12.jpg",
+          "keterangan": "Tiang dan tangga kayu"
+        },
+        {
+          "asal": "Salinan Jami Al Mansur13.jpg"
+        },
+        {
+          "asal": "Salinan Jami Al Mansur4.jpg",
+          "keterangan": "Ruang salat"
+        }
+      ]
+    },
+    "bangunan-jl-pekojan-no-38": {
+      "folder": "239. Bangunan Jl. Pekojan (Bangunan Rumah Toko No.38)",
+      "foto": []
+    },
+    "kantor-pt-pralaba-no-45": {
+      "folder": "240. Bangunan Jl. Pekojan (Bangunan Kantor PT Pralaba Rumah Toko No.45)",
+      "foto": []
+    },
+    "bangunan-jl-pekojan-no-46": {
+      "folder": "241. Bangunan Jl. Pekojan (Bangunan Rumah Toko No.46)",
+      "foto": []
+    },
+    "bangunan-jl-pekojan-no-47": {
+      "folder": "242. Bangunan Jl. Pekojan (Bangunan Rumah Toko No.47)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-pekojan-no-54": {
+      "folder": "243. Bangunan Langgam Cina Jl. Pekojan (Bangunan Rumah Toko No.54)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-pekojan-no-55": {
+      "folder": "244. Bangunan Langgam Cina Jl. Pekojan (Bangunan Rumah Toko No.55)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-pekojan-no-60": {
+      "folder": "245. Bangunan Langgam Cina Jl. Pekojan (Bangunan Rumah Toko No.60)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-pekojan-no-61": {
+      "folder": "246. Bangunan Langgam Cina Jl. Pekojan (Bangunan Rumah Toko No.61)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-pekojan-no-67": {
+      "folder": "247. Bangunan Langgam Cina Jl. Pekojan (Rumah Toko No.67)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-pekojan-no-86": {
+      "folder": "248. Bangunan Langgam Cina Jl. Pekojan (Bangunan Rumah Toko No.86)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-pekojan-no-87": {
+      "folder": "249. Bangunan Langgam Cina Jl. Pekojan (Rumah Toko No.87)",
+      "foto": []
+    },
+    "ruko-jl-pekojan-no-71": {
+      "folder": "250. Ruko Jl. Pekojan No.72",
+      "foto": []
+    },
+    "masjid-jami-an-nawier": {
+      "folder": "251. Masjid Jami An-Nawier (Masjid Petuakan)",
+      "foto": [
+        {
+          "asal": "Salinan DSC03472-HDR..jpg",
+          "keterangan": "Serambi"
+        },
+        {
+          "asal": "Salinan DSC03313-HDR..jpg",
+          "keterangan": "Pintu masuk"
+        },
+        {
+          "asal": "Salinan DSC03508-HDR..jpg",
+          "keterangan": "Bedug"
+        },
+        {
+          "asal": "Salinan DSC03548-HDR..jpg",
+          "keterangan": "Mihrab"
+        },
+        {
+          "asal": "Salinan DSC03557-HDR..jpg",
+          "keterangan": "Ruang salat"
+        }
+      ]
+    },
+    "masjid-jami-al-anshar": {
+      "folder": "252. Masjid Jami Al Anshar  (Masjid Pengukiran)",
+      "foto": []
+    },
+    "bangunan-langgam-cina-di-kompleks-smpn-32": {
+      "folder": "253. Bangunan Langgam Cina di Kompleks SMPN 32",
+      "foto": []
+    },
+    "masjid-langgar-tinggi-pekojan": {
+      "folder": "254. Masjid Langgar Tinggi Pekojan",
+      "foto": [
+        {
+          "asal": "Salinan Langgar Tinggi_1.jpg",
+          "keterangan": "Tampak masjid dari jalan"
+        },
+        {
+          "asal": "Salinan Langgar Tinggi_13.jpg",
+          "keterangan": "Serambi"
+        },
+        {
+          "asal": "Salinan Langgar Tinggi_2.jpg",
+          "keterangan": "Ruang salat"
+        },
+        {
+          "asal": "Salinan Langgar Tinggi_5.jpg"
+        },
+        {
+          "asal": "Salinan Langgar Tinggi_8.jpg",
+          "keterangan": "Jendela kayu"
+        }
+      ]
+    },
+    "masjid-bandengan": {
+      "folder": "255. Masjid Bandengan",
+      "foto": []
+    },
+    "makam-kramat-wijaya-kusuma": {
+      "folder": "256. Makam Kramat Wijaya Kusuma",
+      "foto": []
+    },
+    "asrama-polsek-palmerah": {
+      "folder": "257 Asrama Polsek Palmerah (Landhuis)",
+      "foto": []
+    },
+    "sdn-palmerah-07-pagi": {
+      "folder": "258. SDN Palmerah 07 Pagi",
+      "foto": []
+    },
+    "museum-tekstil": {
+      "folder": "259. Museum Tekstil",
+      "foto": []
+    },
+    "masjid-jami-al-anwar": {
+      "folder": "260. Masjid Jami Al-Anwar (Masjid Angke)",
+      "foto": [
+        {
+          "asal": "Salinan Jami Angke1.jpg",
+          "keterangan": "Atap masjid di tengah permukiman"
+        },
+        {
+          "asal": "Salinan Jami Angke5.jpg",
+          "keterangan": "Pintu masuk"
+        },
+        {
+          "asal": "Salinan Jami Anke10.jpg",
+          "keterangan": "Ruang salat"
+        },
+        {
+          "asal": "Salinan Jami Anke13.jpg"
+        },
+        {
+          "asal": "Salinan Jami Anke26.jpg",
+          "keterangan": "Serambi"
+        },
+        {
+          "asal": "Salinan Jami Angke7.jpg",
+          "keterangan": "Kisi-kisi jendela"
+        }
+      ]
+    },
+    "rumah-tinggal-vogelaar": {
+      "folder": "261. Rumah Tinggal Vogelaar",
+      "foto": []
+    },
+    "pusat-pelatihan-dan-pengembangan-pendidikan-jakarta-barat": {
+      "folder": "262. Pusat Pelatihan dan Pengembangan Pendidikan Jakarta Barat",
+      "foto": []
+    },
+    "bank-mandiri-eks-bank-bumi-daya": {
+      "folder": "263. Bank Mandiri Eks Bank Bumi Daya",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-barat-kantor-no-5": {
+      "folder": "264. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.5",
+      "foto": []
+    },
+    "banteng-building": {
+      "folder": "265. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.6",
+      "foto": []
+    },
+    "bank-sinarmas": {
+      "folder": "266. Bank Sinarmas",
+      "foto": []
+    },
+    "kpp-pratama-jakarta-tambora": {
+      "folder": "267. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.14-15",
+      "foto": []
+    },
+    "gedung-inkopad-jl-kalibesar-barat-no-16-17": {
+      "folder": "268. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.16-17",
+      "foto": []
+    },
+    "gedung-maybank-jl-kalibesar-barat-no-18-19": {
+      "folder": "269. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.18-19",
+      "foto": []
+    },
+    "old-city-club": {
+      "folder": "270. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.22",
+      "foto": []
+    },
+    "gedung-aswata-jl-kalibesar-barat-no-25": {
+      "folder": "271. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.25",
+      "foto": []
+    },
+    "bangunan-jl-kalibesar-barat-no-26": {
+      "folder": "272. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.26",
+      "foto": []
+    },
+    "de-qur-hotel": {
+      "folder": "273. De Qur Hotel",
+      "foto": [
+        {
+          "asal": "Salinan Highres.jpg",
+          "keterangan": "Tampak depan hotel"
+        }
+      ]
+    },
+    "bangunan-jalan-kali-besar-barat-bangunan-no-28": {
+      "folder": "274. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.28",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-barat-bangunan-no-29": {
+      "folder": "275. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.29",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-barat-bangunan-no-30": {
+      "folder": "276. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.30",
+      "foto": []
+    },
+    "bangunan-pt-gambir-trading-company-jl-kalibesar-barat-no-31": {
+      "folder": "277. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.31 Bangunan PT Gambir Trading Company",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-barat-bangunan-no-32": {
+      "folder": "278. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.32",
+      "foto": []
+    },
+    "bangunan-jalan-kali-besar-barat-bangunan-no-33": {
+      "folder": "279. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.33",
+      "foto": []
+    },
+    "gedung-fed-ex-authorized-ship-center": {
+      "folder": "280. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.34-36 Gedung Fed Ex Authorized Ship Center",
+      "foto": []
+    },
+    "gedung-pt-karya-technik-multifinance-no-37": {
+      "folder": "281. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.37 Gedung PT. Karya Technic Multifinance",
+      "foto": []
+    },
+    "ruko-di-samping-gedung-pt-karya-technik-utama": {
+      "folder": "282. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.38 Ruko di samping Gedung PT. Karya Technic Utama",
+      "foto": []
+    },
+    "bangunan-sil-kargo-pt-samudera-indonesia": {
+      "folder": "283. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.39 Bangunan Sil Kargo PT. Samudera Indonesia",
+      "foto": []
+    },
+    "gedung-qnb": {
+      "folder": "284. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.40 Gedung QNB",
+      "foto": []
+    },
+    "gedung-wira-pratama-kencana": {
+      "folder": "285. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.41 Gedung Wira Pratama Kencana",
+      "foto": []
+    },
+    "pt-samudra-indonesia": {
+      "folder": "286. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.42-43 PT. Samudra Indonesia",
+      "foto": []
+    },
+    "bangunan-jl-kalibesar-barat-no-47": {
+      "folder": "287. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.47",
+      "foto": []
+    },
+    "bangunan-jl-kalibesar-barat-no-48": {
+      "folder": "288. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.48",
+      "foto": []
+    },
+    "gedung-pt-winner-jayakarya-jl-kalibesar-barat-no-49": {
+      "folder": "289. Bangunan Lama Toko Kantor Gudang Jalan Kali Besar Barat No.49 Gedung PT. Winner Jayakarya",
+      "foto": []
+    },
+    "toko-merah": {
+      "folder": "290. Toko Merah",
+      "foto": [
+        {
+          "asal": "Salinan Toko Merah12.jpg",
+          "keterangan": "Tampak depan gedung"
+        },
+        {
+          "asal": "Salinan Toko Merah5.jpg",
+          "keterangan": "Pintu dalam"
+        },
+        {
+          "asal": "Salinan Toko Merah2.jpg"
+        },
+        {
+          "asal": "Salinan Toko Merah6.jpg",
+          "keterangan": "Tangga kayu"
+        },
+        {
+          "asal": "Salinan Toko Merah11.jpg",
+          "keterangan": "Ruang dalam"
+        }
+      ]
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-102-a-sd-106-no-102": {
+      "folder": "291. Bangunan Rumah Toko No.102",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-102-a-sd-106-no-104": {
+      "folder": "292. Bangunan Rumah Toko No.104",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-102-a-sd-106-no-106": {
+      "folder": "293. Bangunan Rumah Toko No.106",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-238": {
+      "folder": "294. Bangunan Rumah Toko No.238",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-252": {
+      "folder": "295. Bangunan Rumah Toko No.252",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-256": {
+      "folder": "296. Bangunan Rumah Toko No.256 Toko Setia",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-258": {
+      "folder": "297. Bangunan Rumah Toko No.258 Toko Mulia",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-259": {
+      "folder": "298. Bangunan Rumah Toko No.259 Toko Baru",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-260": {
+      "folder": "299. Bangunan Rumah Toko No.260",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-261": {
+      "folder": "300. Bangunan Rumah Toko No.261",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-262": {
+      "folder": "301. Bangunan Rumah Toko No.262 Toko Sehati",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-263": {
+      "folder": "302. Bangunan Rumah Toko No.263 Toko Sumber Jaya",
+      "foto": []
+    },
+    "bangunan-langgam-cina-jl-khm-mansyur-no-238-sd-264-no-264": {
+      "folder": "303. Bangunan Rumah Toko No.264",
+      "foto": []
+    },
+    "bangunan-cina": {
+      "folder": "304. Bangunan Cina (Bangunan Jl. Toko Tiang Sebrang No.5)",
+      "foto": []
+    },
+    "jembatan-kota-intan": {
+      "folder": "305. Jembatan Kota Intan",
+      "foto": []
+    },
+    "gedung-singa-kuning-no-3-4": {
+      "folder": "306. Gedung Singa Kuning No.3-4",
+      "foto": []
+    },
+    "hotel-omni-batavia": {
+      "folder": "307. Hotel Mercure Batavia",
+      "foto": [
+        {
+          "asal": "Salinan Mercure_2.jpg",
+          "keterangan": "Tampak depan hotel"
+        },
+        {
+          "asal": "Salinan Mercure_3.jpg",
+          "keterangan": "Hotel di tepi Kali Besar"
+        },
+        {
+          "asal": "Salinan Mercure_4.jpg",
+          "keterangan": "Hotel dari udara"
+        },
+        {
+          "asal": "Salinan Mercure_1.jpg"
+        },
+        {
+          "asal": "Salinan Mercure_5.jpeg",
+          "keterangan": "Detail fasad"
+        }
+      ]
+    },
+    "bangunan-jl-kalibesar-barat-no-50": {
+      "folder": "308. Bangunan Jl. Kalibesar Barat No.50",
+      "foto": []
+    },
+    "kawasan-kota-tua": {
+      "folder": "309. Kawasan Kota Tua",
+      "foto": []
+    },
+    "yacht-club": {
+      "folder": "310. Gedung Yacht Club",
+      "foto": []
+    },
+    "gudang-timur": {
+      "folder": "311. Gudang Timur",
+      "foto": []
+    },
+    "masjid-dan-makam-kramat-luar-batang": {
+      "folder": "312. Masjid dan Makam Kramat Luar Batang (Masjid Luar Batang)",
+      "foto": [
+        {
+          "asal": "Salinan Luar Batang.jpg",
+          "keterangan": "Kompleks masjid dari udara"
+        },
+        {
+          "asal": "Salinan DSC01240-HDR.jpg",
+          "keterangan": "Pintu masuk"
+        },
+        {
+          "asal": "Salinan DSC01153-HDR.jpg",
+          "keterangan": "Ruang salat"
+        },
+        {
+          "asal": "Salinan DSC01175-HDR.jpg"
+        },
+        {
+          "asal": "Salinan DSC01193-HDR..jpg",
+          "keterangan": "Mihrab dan mimbar"
+        },
+        {
+          "asal": "Salinan DSC01160-HDR..jpg",
+          "keterangan": "Langit-langit"
+        }
+      ]
+    },
+    "pasar-heksagon": {
+      "folder": "313. Pasar Heksagon (Akuarium)",
+      "foto": []
+    },
+    "pasar-ikan": {
+      "folder": "314. Pasar Pelelangan Ikan",
+      "foto": []
+    },
+    "museum-bahari": {
+      "folder": "315. Museum Bahari",
+      "foto": []
+    },
+    "menara-syahbandar": {
+      "folder": "316. Menara Syahbandar",
+      "foto": [
+        {
+          "asal": "Salinan Syahbandar_2.jpg",
+          "keterangan": "Tampak depan menara"
+        },
+        {
+          "asal": "Salinan Syahbandar_12.jpg",
+          "keterangan": "Menara dari ketinggian"
+        },
+        {
+          "asal": "Salinan Syahbandar_5.jpg"
+        },
+        {
+          "asal": "Salinan Syahbandar_6.jpg",
+          "keterangan": "Menara dan sekitarnya dari udara"
+        },
+        {
+          "asal": "Salinan Syahbandar_13.jpg",
+          "keterangan": "Bangunan di samping menara"
+        },
+        {
+          "asal": "Salinan Syahbandar_4.jpg",
+          "keterangan": "Prasasti dan meriam"
+        }
+      ]
+    },
+    "resto-cafe-galangan-voc": {
+      "folder": "317. Resto Cafe Galangan VOC (VOC Resto)",
+      "foto": []
+    },
+    "gedung-palang-restoran-raja-kuring": {
+      "folder": "318. Gedung Palang Restoran Raja Kuring (My King Seafood)",
+      "foto": []
+    },
+    "gereja-tugu": {
+      "folder": "319. Gereja Tugu (GPIB Jemaat Tugu Jakarta)",
+      "foto": []
+    },
+    "makam-kapiten-tete-jongker": {
+      "folder": "320. Makam Kapiten Tete Jongker",
+      "foto": []
+    },
+    "masjid-al-alam-marunda": {
+      "folder": "321. Masjid Al-Alam Marunda",
+      "foto": []
+    },
+    "sisa-sisa-benteng": {
+      "folder": "322. Sisa-sisa Benteng (Ancol Binara)",
+      "foto": []
+    },
+    "masjid-kampung-bandan": {
+      "folder": "323. Masjid Kampung Bandan (Masjid Al-Mukarromah Kampung Bandan)",
+      "foto": []
+    },
+    "masjid-al-alam": {
+      "folder": "324. Masjid Al Alam (Masjid Al Alam Cilincing)",
+      "foto": []
+    },
+    "asrama-perikanan": {
+      "folder": "325. Asrama Perikanan",
+      "foto": []
+    },
+    "langgar-tinggi-rumah-si-pitung": {
+      "folder": "326. Rumah Si Pitung",
+      "foto": []
+    },
+    "stasiun-kereta-api-tanjung-priok": {
+      "folder": "327. Stasiun Kereta Api Tanjung Priok",
+      "foto": []
+    },
+    "menara-kemayoran": {
+      "folder": "328. Menara Kemayoran (Menara ATC Kemayoran)",
+      "foto": []
+    },
+    "gugusan-pulau-onrust-pulau-cipir-pulau-kelor-dan-pulau-bidadari": {
+      "folder": "329. Gugusan Pulau Onrust, Pulau Cipir, Pulau Kelor, dan Pulau Bidadari",
+      "foto": []
+    },
+    "mercusuar-pulau-sebira-menara-jaga-utara-pulau-seribu": {
+      "folder": "330. Mercusuar Pulau Sebira Menara Jaga Utara Pulau Seribu",
+      "foto": []
+    },
+    "benteng-onrust": {
+      "folder": "331. Benteng Onrust",
+      "foto": []
+    },
+    "reruntuhan-menara-martello-pulau-bidadari": {
+      "folder": "332. Reruntuhan Menara Martello Pulau Bidadari",
+      "foto": [
+        {
+          "asal": "Salinan Pulau Bidadari1.jpg",
+          "keterangan": "Reruntuhan menara dari udara"
+        },
+        {
+          "asal": "Salinan Pulau Bidadari2.jpg",
+          "keterangan": "Denah melingkar dari atas"
+        },
+        {
+          "asal": "Salinan Pulau Bidadari18.jpg",
+          "keterangan": "Dinding bata"
+        },
+        {
+          "asal": "Salinan Pulau Bidadari50.jpg",
+          "keterangan": "Lubang tembak"
+        },
+        {
+          "asal": "Salinan Pulau Bidadari47.jpg",
+          "keterangan": "Tangga dalam"
+        }
+      ]
+    },
+    "reruntuhan-menara-martello-pulau-kelor": {
+      "folder": "333. Reruntuhan Menara Martello Pulau Kelor",
+      "foto": [
+        {
+          "asal": "Salinan Kelor3.jpg",
+          "keterangan": "Reruntuhan menara"
+        },
+        {
+          "asal": "Salinan Kelor5.jpg"
+        },
+        {
+          "asal": "Salinan Kelor1.jpg"
+        },
+        {
+          "asal": "Salinan Kelor2.jpg",
+          "keterangan": "Sisa dinding di tepi pantai"
+        },
+        {
+          "asal": "Salinan Kelor17.jpg",
+          "keterangan": "Jendela lengkung"
+        },
+        {
+          "asal": "Salinan Kelor19.jpg"
+        },
+        {
+          "asal": "Salinan Kelor20.jpg"
+        },
+        {
+          "asal": "Salinan Kelor18.jpg",
+          "keterangan": "Bagian dalam menara"
+        },
+        {
+          "asal": "Salinan Kelor4.jpg",
+          "keterangan": "Lorong bata"
+        },
+        {
+          "asal": "Salinan Kelor16.jpg",
+          "keterangan": "Tangga dalam"
+        }
+      ]
     }
   }
 }
